@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PannaCottas Anto's · Postres artesanales en Katy, TX</title>
-<meta name="description" content="Postres caseros hechos a mano en Katy, TX. Panna cotta, flan, cake pops, mini cakes y cookies con ingredientes selectos. Mira el menú completo y pide por WhatsApp." />
-<meta name="theme-color" content="#8A34B8" />
+<title>Panna Cottas Anto's · Postres artesanales en Katy, TX</title>
+<meta name="description" content="Postres artesanales hechos a mano en pequeñas tandas en Katy, TX. Panna cotta, flan, cake pops, mini tres leches y cookies. Mira el menú y pide por WhatsApp." />
+<meta name="theme-color" content="#3E2E4F" />
+
 <link rel="canonical" href="https://pannacottas-antos.vercel.app/" />
 
-<!-- Favicon -->
 <link rel="icon" href="assets/marca/badge.png" type="image/png" />
 <link rel="apple-touch-icon" href="assets/marca/badge.png" />
 
 <!-- Open Graph / redes -->
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="PannaCottas Anto's" />
-<meta property="og:title" content="PannaCottas Anto's · Postres artesanales en Katy, TX" />
-<meta property="og:description" content="Panna cotta, flan, cake pops, mini cakes y cookies hechos a mano. Pide por WhatsApp." />
+<meta property="og:site_name" content="Panna Cottas Anto's" />
+<meta property="og:title" content="Panna Cottas Anto's · Postres artesanales en Katy, TX" />
+<meta property="og:description" content="Panna cotta, flan, cake pops, mini tres leches y cookies hechos a mano en pequeñas tandas. Pide por WhatsApp." />
 <meta property="og:url" content="https://pannacottas-antos.vercel.app/" />
 <meta property="og:image" content="https://pannacottas-antos.vercel.app/assets/marca/og.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -25,731 +25,752 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
 <style>
+  /* ============================================================
+     PANNA COTTAS ANTO'S — sistema de marca (rebranding PYRAXIS)
+     Porcelana 46% · Lavanda 24% · Ciruela 16% · Rosa 7% · Pistacho · Oro
+     ============================================================ */
   :root{
-    --violet:#B95AE6;
-    --violet-deep:#8A34B8;
-    --ink:#3A2A47;
-    --ink-soft:#6B5A78;
-    --cream:#FBF7F3;
-    --cream-2:#F6EEF7;
-    --panel:#F2E5FA;
-    --rose:#E7C7DA;
-    --gold:#C39A54;
-    --white:#ffffff;
-    --shadow:0 18px 50px -22px rgba(58,42,71,.35);
-    --shadow-soft:0 10px 30px -18px rgba(58,42,71,.30);
+    --porcelana:#F7F2ED;
+    --porcelana-alt:#FBF8F4;
+    --almendra:#E8DCC8;
+    --almendra-soft:#F1E9DC;
+    --lavanda:#A187C4;
+    --lavanda-soft:#C9BADD;
+    --lavanda-wash:#EDE7F4;
+    --ciruela:#3E2E4F;
+    --ciruela-soft:#5F4E70;
+    --ciruela-mute:#7A6B89;
+    --rosa:#E3AEC8;
+    --rosa-wash:#F6E4EE;
+    --pistacho:#A9C2A0;
+    --oro:#C0985A;
+    --violeta:#B95AE6;
+    --violeta-ink:#8A34B8;   /* mismo violeta, oscurecido para contraste AA */
+    --white:#fff;
+    --shadow-s:0 10px 28px -20px rgba(62,46,79,.45);
+    --shadow-m:0 22px 55px -30px rgba(62,46,79,.50);
+    --shadow-l:0 34px 80px -40px rgba(62,46,79,.55);
+    --r-s:14px; --r-m:22px; --r-l:34px;
   }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{
-    margin:0;
-    background:var(--cream);
-    color:var(--ink);
-    font-family:"Mulish",system-ui,sans-serif;
-    font-size:17px;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
+    margin:0;background:var(--porcelana);color:var(--ciruela);
+    font-family:"Jost",system-ui,sans-serif;font-size:17px;font-weight:400;line-height:1.7;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
   }
-  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0;}
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  .wrap{width:min(1140px,92vw);margin-inline:auto;}
+  h1,h2,h3,h4{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.005em;margin:0;color:var(--ciruela)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  p{margin:0 0 1rem}
+  .wrap{width:min(1160px,91vw);margin-inline:auto}
+  .script{font-family:"Sacramento",cursive;font-weight:400;color:var(--lavanda);letter-spacing:.01em}
+
+  /* --- patrón de puntos pastel --- */
+  .dots::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+    background-image:
+      radial-gradient(circle, rgba(227,174,200,.75) 1.7px, transparent 1.8px),
+      radial-gradient(circle, rgba(192,152,90,.55) 1.5px, transparent 1.6px),
+      radial-gradient(circle, rgba(169,194,160,.55) 1.5px, transparent 1.6px);
+    background-size:130px 130px,130px 130px,130px 130px;
+    background-position:0 0, 44px 66px, 88px 26px;
+  }
+
+  /* --- eyebrow con mariposa --- */
   .eyebrow{
-    font-family:"Mulish";font-weight:700;font-size:.74rem;letter-spacing:.22em;
-    text-transform:uppercase;color:var(--violet-deep);
-    display:inline-flex;align-items:center;gap:.6rem;
-  }
-  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block;}
-
-  /* ---------- Buttons ---------- */
-  .btn{
     display:inline-flex;align-items:center;gap:.55rem;
-    font-family:"Mulish";font-weight:700;font-size:.98rem;
-    padding:.85rem 1.5rem;border-radius:999px;cursor:pointer;border:none;
-    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
-    white-space:nowrap;
+    font-family:"Jost";font-weight:500;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--ciruela-mute);
   }
-  .btn-primary{background:var(--violet-deep);color:#fff;box-shadow:0 10px 24px -12px rgba(138,52,184,.7);}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(138,52,184,.75);}
-  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(58,42,71,.18);}
-  .btn-ghost:hover{border-color:var(--violet);color:var(--violet-deep);transform:translateY(-2px);}
-  .btn svg{width:18px;height:18px;flex:none;}
+  .eyebrow .bfly{width:15px;height:15px;color:var(--lavanda);flex:none}
+  .eyebrow::after{content:"";width:30px;height:1px;background:var(--oro);display:inline-block}
 
-  /* ---------- Header ---------- */
-  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
-    background:rgba(251,247,243,.82);border-bottom:1px solid rgba(58,42,71,.07);}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0;}
-  .brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces";font-weight:600;font-size:1.28rem;color:var(--ink);}
-  .brand em{font-style:italic;color:var(--violet-deep);}
-  .nav-links{display:flex;align-items:center;gap:1.5rem;}
-  .nav-links a{font-weight:600;font-size:.96rem;color:var(--ink-soft);position:relative;}
-  .nav-links a:hover{color:var(--violet-deep);}
-  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--violet);transition:width .2s ease;border-radius:2px;}
-  .nav-links a:hover::after{width:100%;}
-  .nav-right{display:flex;align-items:center;gap:.9rem;}
-  .lang{display:inline-flex;align-items:center;border:1.5px solid rgba(185,90,230,.35);border-radius:999px;overflow:hidden;font-weight:700;font-size:.82rem;background:#fff;box-shadow:0 2px 8px -4px rgba(58,42,71,.25);}
-  .lang-globe{display:inline-flex;align-items:center;padding:0 .1rem 0 .6rem;color:var(--violet-deep);}
-  .lang-globe svg{width:15px;height:15px;}
-  .lang button{background:transparent;border:none;padding:.35rem .7rem;cursor:pointer;color:var(--ink-soft);font-family:"Mulish";font-weight:700;}
-  .lang button.active{background:var(--violet);color:#fff;}
-  .lang-mobile{display:none;}
-  .nav-ig{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--violet-deep);border:1.5px solid rgba(185,90,230,.30);transition:all .18s ease;}
-  .nav-ig:hover{color:#fff;background:linear-gradient(135deg,#B95AE6,#8A34B8);border-color:transparent;transform:translateY(-1px);}
-  .nav-ig svg{width:19px;height:19px;}
-  .ig-chip{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;font-weight:700;font-size:.92rem;color:var(--violet-deep);background:#fff;border:1.5px solid rgba(185,90,230,.28);padding:.55rem 1rem;border-radius:999px;box-shadow:var(--shadow-soft);transition:transform .18s ease, box-shadow .18s ease;}
-  .ig-chip:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
-  .ig-chip svg{width:18px;height:18px;flex:none;}
-  .ig-chip .handle{color:var(--ink);}
-  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:var(--ink);}
-  .menu-toggle svg{width:26px;height:26px;}
+  /* --- divisor de corazón --- */
+  .divider{display:flex;align-items:center;justify-content:center;gap:.9rem;margin:0 auto;padding:clamp(2.4rem,5vw,4rem) 0}
+  .divider span{width:min(72px,14vw);height:1px;background:linear-gradient(90deg,transparent,var(--oro))}
+  .divider span:last-child{background:linear-gradient(90deg,var(--oro),transparent)}
+  .divider svg{width:15px;height:15px;color:var(--lavanda)}
 
-  /* ---------- Hero ---------- */
-  .hero{position:relative;overflow:hidden;}
+  /* --- botones --- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    font-family:"Jost";font-weight:500;font-size:.95rem;letter-spacing:.03em;
+    padding:.9rem 1.6rem;border-radius:999px;cursor:pointer;border:none;white-space:nowrap;
+    transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-primary{background:linear-gradient(135deg,var(--violeta),var(--violeta-ink));color:#fff;box-shadow:0 14px 30px -16px rgba(138,52,184,.75)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 38px -18px rgba(138,52,184,.8)}
+  .btn-ghost{background:transparent;color:var(--ciruela);border:1px solid rgba(62,46,79,.20)}
+  .btn-ghost:hover{border-color:var(--lavanda);color:var(--violeta-ink);transform:translateY(-2px)}
+  .btn-light{background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.35)}
+  .btn-light:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+
+  /* ================= HEADER ================= */
+  header{position:sticky;top:0;z-index:60;background:rgba(247,242,237,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(62,46,79,.07)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+  /* lockup horizontal */
+  .lockup{display:flex;align-items:center;gap:.7rem}
+  .lockup .mark{width:34px;height:34px;color:var(--lavanda);flex:none}
+  .lockup .words{display:flex;flex-direction:column;line-height:1}
+  .lockup .l1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.24rem;letter-spacing:.015em;color:var(--ciruela)}
+  .lockup .l2{font-family:"Sacramento",cursive;font-size:1.5rem;color:var(--lavanda);margin-top:-.28em;margin-left:.15em}
+  .nav-links{display:flex;align-items:center;gap:1.6rem}
+  .nav-links a{font-weight:400;font-size:.94rem;letter-spacing:.02em;color:var(--ciruela-soft);position:relative}
+  .nav-links a:hover{color:var(--ciruela)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:1.5px;background:var(--lavanda);transition:width .22s ease;border-radius:2px}
+  .nav-links a:hover::after{width:100%}
+  .nav-right{display:flex;align-items:center;gap:.8rem}
+  .lang{display:inline-flex;align-items:center;border:1px solid rgba(62,46,79,.16);border-radius:999px;overflow:hidden;background:rgba(255,255,255,.7);font-size:.78rem}
+  .lang-globe{display:inline-flex;padding:0 .1rem 0 .6rem;color:var(--lavanda)}
+  .lang-globe svg{width:14px;height:14px}
+  .lang button{background:transparent;border:none;padding:.34rem .68rem;cursor:pointer;color:var(--ciruela-mute);font-family:"Jost";font-weight:500;letter-spacing:.06em}
+  .lang button.active{background:var(--lavanda);color:#fff}
+  .lang-mobile{display:none}
+  .nav-ig{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;color:var(--ciruela-soft);border:1px solid rgba(62,46,79,.16);transition:all .2s ease}
+  .nav-ig:hover{color:#fff;background:var(--lavanda);border-color:transparent;transform:translateY(-1px)}
+  .nav-ig svg{width:18px;height:18px}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:var(--ciruela)}
+  .menu-toggle svg{width:26px;height:26px}
+
+  /* ================= HERO ================= */
+  .hero{position:relative;overflow:hidden}
   .hero-bg{position:absolute;inset:0;z-index:0;
     background:
-      radial-gradient(55% 50% at 85% 14%, rgba(231,199,218,.50), transparent 62%),
-      radial-gradient(52% 55% at 8% 92%, rgba(247,214,196,.42), transparent 64%),
-      radial-gradient(40% 40% at 50% 46%, rgba(185,90,230,.07), transparent 70%),
-      linear-gradient(180deg,#FDF8F4 0%, #FBF1F4 100%);
+      radial-gradient(58% 52% at 84% 8%, rgba(227,174,200,.55), transparent 66%),
+      radial-gradient(52% 50% at 10% 92%, rgba(161,135,196,.34), transparent 68%),
+      radial-gradient(48% 42% at 46% 52%, rgba(232,220,200,.45), transparent 72%),
+      linear-gradient(180deg,#FBF8F4 0%, #F7F2ED 100%);
   }
-  .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center;
-    padding:clamp(3rem,7vw,6rem) 0 clamp(3.5rem,7vw,6rem);}
-  .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin:1.1rem 0 0;color:var(--ink);}
-  .hero h1 em{font-style:italic;color:var(--violet-deep);}
-  .hero .lead{font-size:1.12rem;color:var(--ink-soft);max-width:38ch;margin:1.3rem 0 0;}
-  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem;}
-  .trust{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:2rem;font-size:.85rem;font-weight:600;color:var(--ink-soft);}
-  .trust span{display:inline-flex;align-items:center;gap:.45rem;}
-  .trust span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);}
-  .stage{display:flex;justify-content:center;align-items:center;min-height:340px;position:relative;}
-  .hero-logo{width:min(430px,90%);height:auto;border-radius:22px;
-    box-shadow:0 34px 60px -30px rgba(150,90,120,.45);
-    animation:floaty 6.5s ease-in-out infinite;}
-  @keyframes floaty{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(-.4deg)}}
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:3rem;align-items:center;padding:clamp(2.8rem,6vw,5.5rem) 0 clamp(3rem,6vw,5.5rem)}
+  .hero h1{font-size:clamp(2.7rem,6.2vw,4.6rem);margin:1.1rem 0 .2rem;font-weight:500}
+  .hero h1 .script{font-size:1.18em;line-height:.9;display:inline-block}
+  .hero .lead{font-size:1.06rem;color:var(--ciruela-soft);max-width:33rem;margin-top:1rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.8rem}
+  .trust span{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ciruela-soft);
+    border:1px solid rgba(62,46,79,.14);background:rgba(255,255,255,.55);padding:.42rem .95rem;border-radius:999px}
+  .ig-chip{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;font-size:.9rem;color:var(--ciruela-soft);
+    background:rgba(255,255,255,.72);border:1px solid rgba(62,46,79,.12);padding:.5rem 1rem;border-radius:999px;box-shadow:var(--shadow-s);transition:transform .2s ease,box-shadow .2s ease}
+  .ig-chip:hover{transform:translateY(-2px);box-shadow:var(--shadow-m)}
+  .ig-chip svg{width:17px;height:17px;color:var(--lavanda);flex:none}
+  .ig-chip .handle{color:var(--ciruela);font-weight:500}
 
-  /* ---------- Section shell ---------- */
-  section{padding:clamp(3.5rem,8vw,6rem) 0;}
-  .sec-head{max-width:60ch;}
-  .sec-head h2{font-size:clamp(2rem,4.4vw,3rem);margin-top:1rem;}
-  .sec-head p{color:var(--ink-soft);margin-top:1rem;font-size:1.06rem;}
+  /* escenario del hero: foto en arco + emblema */
+  .stage{position:relative;display:flex;justify-content:center;align-items:center}
+  .arch{position:relative;width:min(430px,80%);aspect-ratio:4/5;border-radius:999px 999px var(--r-l) var(--r-l);
+    overflow:hidden;box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.7);animation:wobble 7s ease-in-out infinite}
+  .arch img{width:100%;height:100%;object-fit:cover;object-position:center 48%}
+  .arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(62,46,79,0) 55%,rgba(62,46,79,.28))}
+  @keyframes wobble{0%,100%{transform:rotate(0) translateY(0)}30%{transform:rotate(-.9deg) translateY(-6px)}70%{transform:rotate(.9deg) translateY(3px)}}
+  .emblem-float{position:absolute;right:-6px;bottom:6%;width:clamp(120px,17vw,158px);height:auto;
+    background:var(--porcelana-alt);border-radius:50%;padding:.7rem;box-shadow:var(--shadow-m);border:1px solid rgba(62,46,79,.07)}
+  .bfly-deco{position:absolute;color:var(--lavanda-soft);pointer-events:none}
+  .bfly-deco.a{width:34px;top:6%;left:2%;opacity:.85;animation:flutter 6s ease-in-out infinite}
+  .bfly-deco.b{width:22px;top:22%;left:14%;opacity:.6;animation:flutter 7.5s ease-in-out infinite .6s}
+  @keyframes flutter{0%,100%{transform:translate(0,0) rotate(-4deg)}50%{transform:translate(6px,-12px) rotate(6deg)}}
 
-  /* ---------- About ---------- */
-  .about{background:linear-gradient(180deg,#fff,#FBF5FC);}
-  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center;}
-  .about-photo{border-radius:26px;overflow:hidden;position:relative;box-shadow:var(--shadow);
-    border:1px solid rgba(185,90,230,.15);background:linear-gradient(150deg,var(--panel),#fff 70%);}
-  /* La foto se muestra COMPLETA: el marco toma la altura natural de la imagen. */
-  .about-img{width:100%;height:auto;display:block;}
-  .about-text .quote{font-family:"Fraunces";font-style:italic;font-size:1.5rem;color:var(--violet-deep);
-    line-height:1.35;border-left:2px solid var(--gold);padding-left:1.2rem;margin:0 0 1.6rem;}
-  .about-text p{color:var(--ink-soft);margin:0 0 1.1rem;}
-  .signature{font-family:"Fraunces";font-style:italic;font-weight:500;color:var(--ink);font-size:1.15rem;margin-top:1.4rem;}
-  .signature span{display:block;font-family:"Mulish";font-style:normal;font-weight:600;font-size:.82rem;color:var(--ink-soft);letter-spacing:.05em;margin-top:.2rem;}
+  /* cinta de lema */
+  .ribbon{position:relative;background:var(--ciruela);color:#fff;overflow:hidden}
+  .ribbon .wrap{display:flex;align-items:center;justify-content:center;gap:1rem;padding:.85rem 0;position:relative;z-index:2}
+  .ribbon .lema{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.28rem);color:#F3EDF7;letter-spacing:.01em}
+  .ribbon .hr{width:36px;height:1px;background:rgba(192,152,90,.8)}
+  .ribbon svg{width:13px;height:13px;color:var(--lavanda-soft)}
 
-  /* ---------- Products ---------- */
-  .prod-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;}
-  .price-note{font-weight:700;color:var(--violet-deep);font-size:.95rem;background:var(--panel);
-    padding:.5rem 1rem;border-radius:999px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.6rem;}
-  .card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-soft);
-    border:1px solid rgba(58,42,71,.06);display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease;}
-  .card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
-  .card-img{height:240px;position:relative;overflow:hidden;}
-  .card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
-  /* encuadra el vasito con la etiqueta, que está en la parte baja de la foto */
-  .card-img.pos-low img{object-position:center 78%;}
-  .card:hover .card-img img{transform:scale(1.05);}
-  /* Degradados de marca: se ven mientras la foto carga */
-  .g1{background:linear-gradient(150deg,#C878E6,#8A34B8);}
-  .g2{background:linear-gradient(150deg,#E7C7DA,#B95AE6);}
-  .g3{background:linear-gradient(150deg,#EAD7B0,#C39A54);}
-  .g4{background:linear-gradient(150deg,#D9A7E0,#8A34B8);}
-  .g5{background:linear-gradient(150deg,#E7C7DA,#C878E6);}
-  .g6{background:linear-gradient(150deg,#D8C3EC,#B95AE6);}
-  .g7{background:linear-gradient(150deg,#EAD7B0,#B95AE6);}
-  .card-body{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.55rem;flex:1;}
-  .card-body h3{font-size:1.28rem;}
-  .card-body .flavors{color:var(--ink-soft);font-size:.95rem;flex:1;}
-  .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.4rem;}
-  .card-foot .from{font-weight:800;color:var(--ink);font-size:1.02rem;}
-  .order-link{font-weight:700;font-size:.9rem;color:var(--violet-deep);display:inline-flex;align-items:center;gap:.35rem;}
-  .order-link:hover{gap:.6rem;}
-  .order-link svg{width:15px;height:15px;transition:transform .18s ease;}
+  /* ================= SOBRE ================= */
+  .about{position:relative;background:var(--almendra-soft);overflow:hidden}
+  .about-grid{position:relative;z-index:2;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center;padding:clamp(3rem,6vw,5.5rem) 0}
+  .about-photo{position:relative}
+  .about-photo img{width:100%;border-radius:999px 999px var(--r-l) var(--r-l);box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.7)}
+  .about-photo .tag{position:absolute;left:50%;transform:translateX(-50%);bottom:-18px;background:var(--porcelana);
+    border:1px solid rgba(62,46,79,.10);border-radius:999px;padding:.5rem 1.15rem;box-shadow:var(--shadow-m);
+    font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ciruela-soft);white-space:nowrap}
+  .about h2{font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:500;margin:.7rem 0 1.1rem}
+  .quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.2rem,2.4vw,1.55rem);
+    line-height:1.45;color:var(--ciruela);border-left:2px solid var(--lavanda);padding-left:1.2rem;margin:0 0 1.4rem}
+  .about p{color:var(--ciruela-soft);font-size:1rem}
+  .signature{display:flex;flex-direction:column;margin-top:1.6rem}
+  .signature .name{font-family:"Sacramento",cursive;font-size:2.5rem;color:var(--lavanda);line-height:1}
+  .signature .role{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ciruela-mute);margin-top:.2rem}
 
-  /* ---------- Menú (cartas) ---------- */
-  .menu-sec{background:linear-gradient(180deg,#FBF5FC,#fff);}
-  .menu-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;}
-  .promo{display:inline-flex;align-items:center;gap:.55rem;font-weight:800;font-size:.92rem;color:#fff;
-    background:linear-gradient(135deg,#8A34B8,#B95AE6);padding:.6rem 1.15rem;border-radius:999px;
-    box-shadow:0 12px 26px -14px rgba(138,52,184,.8);}
-  .promo svg{width:17px;height:17px;flex:none;}
-  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.6rem;}
-  .menu-tile{position:relative;display:block;width:100%;padding:0;border:1px solid rgba(185,90,230,.16);
-    background:var(--panel);border-radius:20px;overflow:hidden;cursor:zoom-in;aspect-ratio:2/3;
-    box-shadow:var(--shadow-soft);transition:transform .22s ease, box-shadow .22s ease;}
-  .menu-tile:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
-  /* absolutas: así la foto no impone su alto natural a la fila del grid */
-  .menu-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;}
-  .menu-tile.feature{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;}
-  .zoom{position:absolute;top:.7rem;right:.7rem;width:34px;height:34px;border-radius:50%;
-    background:rgba(255,255,255,.88);color:var(--violet-deep);display:grid;place-items:center;
-    box-shadow:0 6px 16px -8px rgba(58,42,71,.55);transition:transform .2s ease, background .2s ease;}
-  .zoom svg{width:17px;height:17px;}
-  .menu-tile:hover .zoom,.booth-shot:hover .zoom{transform:scale(1.1);background:#fff;}
+  /* ================= POSTRES ================= */
+  .sec-head{max-width:36rem}
+  .sec-head h2{font-size:clamp(1.95rem,4vw,3rem);font-weight:500;margin:.7rem 0 .6rem}
+  .sec-head p{color:var(--ciruela-soft);font-size:1rem}
+  .prod-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.4rem}
+  .price-note{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ciruela-soft);background:var(--white);border:1px solid rgba(62,46,79,.10);padding:.55rem 1.1rem;border-radius:999px;box-shadow:var(--shadow-s)}
+  .price-note svg{width:15px;height:15px;color:var(--oro)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+  .card{background:var(--white);border:1px solid rgba(62,46,79,.08);border-radius:var(--r-m);overflow:hidden;
+    box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-m)}
+  .card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--lavanda-wash)}
+  .card-img img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease}
+  .card-img.low img{object-position:center 74%}
+  .card:hover .card-img img{transform:scale(1.05)}
+  .card-tag{position:absolute;top:.8rem;left:.8rem;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+    background:rgba(255,255,255,.92);color:var(--ciruela-soft);padding:.32rem .7rem;border-radius:999px;backdrop-filter:blur(6px)}
+  .card-body{padding:1.3rem 1.4rem 1.4rem;display:flex;flex-direction:column;flex:1}
+  .card-body h3{font-size:1.42rem;font-weight:500;margin-bottom:.4rem}
+  .flavors{color:var(--ciruela-soft);font-size:.94rem;line-height:1.6;flex:1}
+  .card-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--almendra)}
+  .from{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:600;color:var(--ciruela)}
+  .from small{font-family:"Jost";font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ciruela-mute);display:block;line-height:1;margin-bottom:.15rem;font-weight:400}
+  .order-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.88rem;font-weight:500;color:var(--violeta-ink);letter-spacing:.03em}
+  .order-link svg{width:15px;height:15px;transition:transform .2s ease}
+  .order-link:hover svg{transform:translateX(3px)}
+  .card-cta{grid-column:span 2;background:linear-gradient(150deg,var(--lavanda-wash),var(--rosa-wash));border-color:rgba(161,135,196,.35);justify-content:center}
+  .cta-card-body{padding:2rem 2.2rem;display:flex;flex-direction:column;align-items:flex-start;max-width:34rem}
+  .cta-bfly{width:30px;height:30px;color:var(--lavanda);margin-bottom:.6rem}
+  .card-cta h3{font-size:1.75rem;font-weight:500;margin-bottom:.5rem}
+  .card-cta p{color:var(--ciruela-soft);font-size:.97rem;margin-bottom:1.3rem}
 
-  /* ---------- Booth ---------- */
-  .booth{background:linear-gradient(180deg,#fff,#FBF5FC);}
-  .booth-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:1.1rem;margin-top:2.6rem;align-items:stretch;}
-  /* align-self:start + width:100% => el alto sale del aspect-ratio, no del estirado del grid */
-  .booth-reel{position:relative;align-self:start;width:100%;border-radius:24px;overflow:hidden;
-    box-shadow:var(--shadow);background:#2B1C36;aspect-ratio:478/850;}
-  .booth-reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#2B1C36;}
-  .booth-stack{display:grid;grid-template-rows:1.18fr 1fr;gap:1.1rem;min-height:0;}
-  .booth-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;min-height:0;}
-  .booth-shot{position:relative;display:block;width:100%;height:100%;padding:0;border:0;cursor:zoom-in;
-    border-radius:22px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow-soft);
-    transition:transform .22s ease, box-shadow .22s ease;}
-  .booth-shot:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
-  .booth-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .booth-note{display:flex;align-items:center;gap:.6rem;margin-top:1.6rem;font-size:.92rem;
-    font-weight:600;color:var(--ink-soft);}
-  .booth-note svg{width:17px;height:17px;color:var(--violet);flex:none;}
+  /* ================= MIÉRCOLES DE WOBBLE ================= */
+  .wobble-band{position:relative;background:var(--ciruela);color:#fff;overflow:hidden;margin-top:clamp(3rem,6vw,5rem)}
+  .wobble-band .dots-layer{position:absolute;inset:0;opacity:.16;
+    background-image:radial-gradient(circle, rgba(255,255,255,.9) 1.6px, transparent 1.7px);background-size:64px 64px}
+  .wobble-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center;padding:clamp(3rem,6vw,5rem) 0}
+  .wobble-band .eyebrow{color:var(--lavanda-soft)}
+  .wobble-band .eyebrow::after{background:var(--oro)}
+  .wobble-band .eyebrow .bfly{color:var(--lavanda-soft)}
+  .wobble-band h2{color:#fff;font-size:clamp(2rem,4.2vw,3.1rem);font-weight:500;margin:.7rem 0 .9rem}
+  .wobble-band h2 .script{color:var(--lavanda-soft);font-size:1.2em;line-height:.9}
+  .wobble-band p{color:#D9CFE4;font-size:1.02rem;max-width:34rem}
+  .wobble-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+  .wobble-media{position:relative;width:min(330px,100%);margin-inline:auto;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.14)}
+  .wobble-media video{width:100%;display:block;background:#000}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:2rem}
+  .pillar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-s);padding:.9rem 1rem}
+  .pillar strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.12rem;font-weight:500;color:#fff;margin-bottom:.15rem}
+  .pillar span{font-size:.82rem;color:#C9BEd6;line-height:1.5}
 
-  /* ---------- Lightbox ---------- */
-  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(35,22,45,.93);backdrop-filter:blur(6px);
-    display:none;align-items:center;justify-content:center;padding:clamp(3.6rem,7vw,4.5rem) clamp(1rem,4vw,2.5rem);}
-  .lightbox.open{display:flex;}
-  .lb-fig{margin:0;max-width:min(94vw,900px);display:flex;flex-direction:column;align-items:center;gap:.9rem;}
-  .lb-fig img{max-width:100%;max-height:calc(100vh - 10rem);width:auto;height:auto;border-radius:14px;
-    background:#fff;box-shadow:0 30px 70px -20px rgba(0,0,0,.6);}
-  .lb-cap{color:rgba(255,255,255,.92);font-weight:600;font-size:.95rem;text-align:center;}
-  .lb-btn{position:absolute;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);
-    color:#fff;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
-    transition:background .18s ease, transform .18s ease;}
-  .lb-btn:hover{background:rgba(255,255,255,.3);transform:scale(1.05);}
-  .lb-btn svg{width:22px;height:22px;}
-  .lb-close{top:clamp(.8rem,2vw,1.6rem);right:clamp(.8rem,2vw,1.6rem);}
-  .lb-prev{left:clamp(.5rem,2vw,1.6rem);top:50%;margin-top:-23px;}
-  .lb-next{right:clamp(.5rem,2vw,1.6rem);top:50%;margin-top:-23px;}
+  /* ================= MENÚ ================= */
+  .menu-sec{position:relative;background:var(--porcelana);overflow:hidden;padding:clamp(3rem,6vw,5rem) 0}
+  .menu-head{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.2rem}
+  .promo{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ciruela);background:var(--rosa-wash);border:1px solid rgba(227,174,200,.7);padding:.55rem 1.1rem;border-radius:999px}
+  .promo svg{width:15px;height:15px;color:var(--oro)}
+  .menu-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;align-items:start}
+  .menu-tile{position:relative;padding:0;border:1px solid var(--almendra);background:var(--white);border-radius:var(--r-m);
+    overflow:hidden;cursor:pointer;box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  .menu-tile:hover{transform:translateY(-4px);box-shadow:var(--shadow-m);border-color:var(--lavanda-soft)}
+  .menu-tile img{width:100%;height:auto}
+  .zoom{position:absolute;right:.7rem;bottom:.7rem;width:34px;height:34px;border-radius:50%;
+    background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;color:var(--ciruela);box-shadow:var(--shadow-s)}
+  .zoom svg{width:16px;height:16px}
 
-  /* ---------- CTA band ---------- */
-  .cta-band{position:relative;overflow:hidden;border-radius:32px;margin:0 auto;
-    background:linear-gradient(135deg,#8A34B8,#B95AE6 70%);color:#fff;padding:clamp(2.5rem,5vw,4rem);text-align:center;box-shadow:var(--shadow);}
-  .cta-band::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.09);top:-120px;right:-60px;}
-  .cta-band::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(231,199,218,.18);bottom:-100px;left:-40px;}
-  .cta-band h2{font-size:clamp(1.9rem,4.5vw,2.8rem);position:relative;}
-  .cta-band p{position:relative;max-width:44ch;margin:1rem auto 1.8rem;color:rgba(255,255,255,.9);font-size:1.08rem;}
-  .cta-band .btn-primary{background:#fff;color:var(--violet-deep);position:relative;}
-  .cta-band .btn-primary:hover{background:#fff;}
-  .cta-alt{position:relative;display:flex;gap:1.4rem;margin-top:1.6rem;font-weight:600;font-size:.95rem;align-items:center;justify-content:center;flex-wrap:wrap;}
-  .cta-alt a{color:#fff;display:inline-flex;align-items:center;gap:.5rem;opacity:.92;}
-  .cta-alt a:hover{opacity:1;}
-  .cta-alt svg{width:18px;height:18px;}
+  /* ================= BOOTH ================= */
+  .booth{position:relative;background:var(--almendra-soft);overflow:hidden;padding:clamp(3rem,6vw,5rem) 0}
+  .booth .wrap{position:relative;z-index:2}
+  .booth-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.2rem;align-items:start}
+  .booth-shot img{aspect-ratio:4/3;object-position:center 72%}
+  .booth-shot.mid img{aspect-ratio:4/3;object-position:center 58%}
+  .booth-shot.wide img{aspect-ratio:16/10;object-position:center}
+  .booth-shot{position:relative;padding:0;border:1px solid rgba(62,46,79,.08);background:var(--white);border-radius:var(--r-m);
+    overflow:hidden;cursor:pointer;box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease}
+  .booth-shot:hover{transform:translateY(-4px);box-shadow:var(--shadow-m)}
+  .booth-shot img{width:100%;height:100%;object-fit:cover}
+  .booth-stack{display:grid;gap:1.4rem}
+  .booth-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  .booth-note{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.8rem;color:var(--ciruela-soft);font-size:.95rem;
+    background:var(--white);border:1px solid rgba(62,46,79,.09);padding:.7rem 1.2rem;border-radius:999px;box-shadow:var(--shadow-s)}
+  .booth-note svg{width:17px;height:17px;color:var(--lavanda);flex:none}
 
-  /* ---------- Footer ---------- */
-  footer{padding:3.5rem 0 2rem;}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem;padding-bottom:2.4rem;border-bottom:1px solid rgba(58,42,71,.1);}
-  .foot-brand .brand{font-size:1.4rem;margin-bottom:.8rem;}
-  .foot-brand p{color:var(--ink-soft);max-width:34ch;font-style:italic;font-family:"Fraunces";}
-  .foot-col h4{font-family:"Mulish";font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-deep);margin:0 0 1rem;}
-  .foot-col a,.foot-col p{display:flex;align-items:center;gap:.6rem;color:var(--ink-soft);margin:0 0 .7rem;font-size:.96rem;font-weight:600;}
-  .foot-col a:hover{color:var(--violet-deep);}
-  .foot-col svg{width:16px;height:16px;flex:none;color:var(--violet);}
-  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;padding-top:1.4rem;font-size:.82rem;color:var(--ink-soft);}
-  .foot-bottom a{color:var(--violet-deep);font-weight:700;}
+  /* ================= CTA ================= */
+  .cta-band{position:relative;overflow:hidden;border-radius:var(--r-l);margin:clamp(3rem,6vw,5rem) 0;
+    background:linear-gradient(155deg,#4A3860 0%,#3E2E4F 55%,#2F2340 100%);color:#fff;
+    padding:clamp(2.6rem,6vw,4.4rem) clamp(1.5rem,5vw,3.5rem);text-align:center;box-shadow:var(--shadow-l)}
+  .cta-band .dots-layer{position:absolute;inset:0;opacity:.14;
+    background-image:radial-gradient(circle, rgba(255,255,255,.9) 1.6px, transparent 1.7px);background-size:60px 60px}
+  .cta-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+  .cta-band .emblem-mini{width:74px;color:var(--lavanda-soft);margin-bottom:.6rem}
+  .cta-band h2{color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:500;margin-bottom:.5rem}
+  .cta-band .lema-script{font-family:"Sacramento",cursive;font-size:clamp(1.5rem,3vw,2rem);color:var(--lavanda-soft);margin-bottom:.9rem}
+  .cta-band p{color:#D5CADF;max-width:34rem;margin-inline:auto}
+  .cta-alt{display:flex;flex-wrap:wrap;gap:1.6rem;justify-content:center;margin-top:1.8rem;font-size:.92rem;color:#CDC1D8}
+  .cta-alt a{display:inline-flex;align-items:center;gap:.5rem;transition:color .2s ease}
+  .cta-alt a:hover{color:#fff}
+  .cta-alt svg{width:16px;height:16px;color:var(--lavanda-soft)}
 
-  /* ---------- Reveal ---------- */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
-  .reveal.in{opacity:1;transform:none;}
+  /* ================= FOOTER ================= */
+  footer{background:var(--ciruela);color:#CFC4DA;padding:clamp(2.6rem,5vw,3.6rem) 0 1.6rem;position:relative;overflow:hidden}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:2.5rem;position:relative;z-index:2}
+  footer .lockup .l1{color:#fff}
+  footer .lockup .l2{color:var(--lavanda-soft)}
+  footer .lockup .mark{color:var(--lavanda-soft)}
+  .foot-brand p{margin-top:1rem;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.1rem;color:#BFB2CC;max-width:22rem}
+  .foot-col h4{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lavanda-soft);font-family:"Jost";font-weight:500;margin-bottom:.9rem}
+  .foot-col a{display:block;font-size:.94rem;color:#CFC4DA;padding:.22rem 0;transition:color .2s ease}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;
+    margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:#A798B6}
 
-  /* ---------- Brand badge ---------- */
-  .brand-badge{width:44px;height:44px;border-radius:50%;flex:none;
-    background:url('assets/marca/badge.png') center/cover no-repeat;
-    box-shadow:0 3px 12px -3px rgba(58,42,71,.30);}
-  .brand-name{line-height:1.05;}
-  .foot-brand .brand-badge{width:52px;height:52px;}
+  /* ================= LIGHTBOX ================= */
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(47,35,64,.94);display:none;align-items:center;justify-content:center;padding:3rem 1rem}
+  .lb.open{display:flex}
+  .lb img{max-width:min(1000px,92vw);max-height:80vh;object-fit:contain;border-radius:var(--r-s);box-shadow:var(--shadow-l)}
+  .lb-cap{position:absolute;bottom:1.4rem;left:0;right:0;text-align:center;color:#E4DAEC;font-size:.9rem}
+  .lb-btn{position:absolute;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.25);color:#fff;
+    width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .lb-btn:hover{background:rgba(255,255,255,.2)}
+  .lb-btn svg{width:20px;height:20px}
+  #lbClose{top:1.2rem;right:1.2rem}
+  #lbPrev{left:1.2rem;top:50%;transform:translateY(-50%)}
+  #lbNext{right:1.2rem;top:50%;transform:translateY(-50%)}
 
-  /* ---------- Responsive ---------- */
-  @media(max-width:900px){
-    .hero-inner{grid-template-columns:1fr;text-align:left;}
-    .stage{order:-1;min-height:300px;}
-    .about-grid{grid-template-columns:1fr;}
-    /* width:100% es necesario: con margin-inline:auto el item deja de estirarse
-       y el 100% de la foto se resolvería contra un ancho indefinido (=0). */
-    .about-photo{order:-1;width:100%;max-width:420px;margin-inline:auto;}
-    .grid{grid-template-columns:repeat(2,1fr);}
-    .menu-grid{grid-template-columns:repeat(2,1fr);}
-    /* a 2 columnas la destacada ocupa toda la fila: necesita alto propio */
-    .menu-tile.feature{grid-column:span 2;grid-row:span 1;aspect-ratio:1/1;max-height:520px;}
-    .booth-grid{grid-template-columns:1fr;}
-    .booth-reel{width:100%;max-width:340px;margin-inline:auto;}
-    .booth-stack{grid-template-rows:auto auto;}
-    .booth-stack > .booth-shot{height:auto;aspect-ratio:16/11;}
-    .booth-pair .booth-shot{height:auto;aspect-ratio:3/4;}
-    .foot-grid{grid-template-columns:1fr 1fr;}
-    .foot-brand{grid-column:1/-1;}
-    .nav-links{display:none;}
-    .menu-toggle{display:block;}
-    .nav-right{gap:.6rem;}
-    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;
-      background:var(--cream);padding:1.2rem 4vw 1.6rem;gap:1.1rem;border-bottom:1px solid rgba(58,42,71,.1);box-shadow:var(--shadow-soft);}
+  /* ================= REVEAL ================= */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .arch,.bfly-deco{animation:none}
+    html{scroll-behavior:auto}
   }
-  @media(max-width:560px){
-    body{font-size:16px;}
-    .grid{grid-template-columns:1fr;}
-    .card-img{height:260px;}
-    .booth-pair{grid-template-columns:1fr;}
-    .booth-pair .booth-shot{aspect-ratio:4/3;}
-    .foot-grid{grid-template-columns:1fr;}
-    .brand-name{display:none;}
-    .nav-ig{display:none;}
-    .nav-right .btn.wa span{display:none;}
-    .nav-right .btn.wa{padding:.7rem;}
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width:980px){
+    .hero-inner{grid-template-columns:1fr;gap:2.5rem}
+    .stage{order:-1}
+    .arch{width:min(340px,74%)}
+    .about-grid{grid-template-columns:1fr;gap:3rem}
+    .about-photo{max-width:420px;margin-inline:auto}
+    .wobble-inner{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
   }
-  @media(prefers-reduced-motion:reduce){
-    .hero-logo{animation:none;}
-    .reveal{transition:none;opacity:1;transform:none;}
-    .card:hover .card-img img{transform:none;}
-    html{scroll-behavior:auto;}
+  @media (max-width:760px){
+    body{font-size:16px}
+    .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--porcelana);flex-direction:column;
+      align-items:flex-start;gap:.2rem;padding:1rem 4.5vw 1.4rem;border-bottom:1px solid rgba(62,46,79,.09);display:none;box-shadow:var(--shadow-m)}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:.5rem 0;font-size:1rem}
+    .menu-toggle{display:block}
+    .nav-right .lang{display:none}
+    .lang-mobile{display:inline-flex;margin-top:.8rem}
+    .booth-grid{grid-template-columns:1fr}
+    .card-cta{grid-column:span 1}
+    .menu-grid{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:1fr;gap:1.8rem}
+    .emblem-float{width:104px;right:-4px}
   }
-  :focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px;}
 </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ============ SVG SPRITE ============ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-bfly" viewBox="0 0 24 24">
+    <g fill="currentColor">
+      <ellipse cx="7.7" cy="8.6" rx="5.1" ry="4.1" transform="rotate(-22 7.7 8.6)"/>
+      <ellipse cx="16.3" cy="8.6" rx="5.1" ry="4.1" transform="rotate(22 16.3 8.6)"/>
+      <ellipse cx="8.8" cy="15.9" rx="4" ry="3.3" transform="rotate(18 8.8 15.9)"/>
+      <ellipse cx="15.2" cy="15.9" rx="4" ry="3.3" transform="rotate(-18 15.2 15.9)"/>
+      <path d="M12 5.2c.72 0 1.12.5 1.12 1.2 0 1.7-.52 4.2-1.12 6.9-.6-2.7-1.12-5.2-1.12-6.9 0-.7.4-1.2 1.12-1.2Z"/>
+      <path d="M11.6 5.5C10.9 4.1 9.9 3.2 8.6 2.7c-.35-.13-.62.4-.28.6 1.05.6 1.85 1.4 2.4 2.6.2.44.9.1.88-.4Z"/>
+      <path d="M12.4 5.5c.7-1.4 1.7-2.3 3-2.8.35-.13.62.4.28.6-1.05.6-1.85 1.4-2.4 2.6-.2.44-.9.1-.88-.4Z"/>
+    </g>
+  </symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.2-4.6-9.3-9C1.2 8.4 3 4.7 6.6 4.2c2.2-.3 4 .8 5.4 2.6 1.4-1.8 3.2-2.9 5.4-2.6C21 4.7 22.8 8.4 21.3 12c-2.1 4.4-9.3 9-9.3 9Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.7-1.1-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.8 1 .8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 14.5 8.5 20.5 9.3 16.2 13.5 17.3 19.5 12 16.7 6.7 19.5 7.8 13.5 3.5 9.3 9.5 8.5Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></symbol>
+</svg>
+
+<!-- emblema circular (SVG) -->
+<template id="emblemTpl">
+  <svg viewBox="0 0 200 200" class="emblem">
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#A187C4" stroke-width="1.1"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#A187C4" stroke-width=".7" opacity=".65"/>
+    <g transform="translate(88,10) scale(1)"><use href="#i-bfly" width="24" height="24" style="color:#A187C4"/></g>
+    <text x="100" y="86" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="20.5" fill="#3E2E4F" letter-spacing=".5">Panna Cottas</text>
+    <text x="100" y="114" text-anchor="middle" font-family="Sacramento,cursive" font-size="30" fill="#A187C4">Anto's</text>
+    <g stroke="#C0985A" stroke-width=".9"><line x1="58" y1="130" x2="88" y2="130"/><line x1="112" y1="130" x2="142" y2="130"/></g>
+    <use href="#i-heart" x="94" y="124" width="12" height="12" style="color:#A187C4"/>
+    <text x="100" y="153" text-anchor="middle" font-family="Jost,sans-serif" font-size="7.6" fill="#7A6B89" letter-spacing="1.1">DELICADEZA EN CADA CAPA</text>
+    <text x="100" y="165" text-anchor="middle" font-family="Jost,sans-serif" font-size="7.6" fill="#7A6B89" letter-spacing="1.1">KATY · TEXAS</text>
+  </svg>
+</template>
+
+<!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav">
-    <a href="#top" class="brand" aria-label="PannaCottas Anto's">
-      <span class="brand-badge" role="img" aria-label="PannaCottas Anto's"></span>
-      <span class="brand-name">PannaCottas <em>Anto's</em></span>
+    <a href="#top" class="lockup" aria-label="Panna Cottas Anto's">
+      <svg class="mark"><use href="#i-bfly"/></svg>
+      <span class="words"><span class="l1">Panna Cottas</span><span class="l2">Anto's</span></span>
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
-      <a href="#sobre" data-es="Sobre nosotros" data-en="About">Sobre nosotros</a>
+      <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
       <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+      <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
       <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
       <a href="#booth" data-es="Booth" data-en="Booth">Booth</a>
       <div class="lang lang-mobile" role="group" aria-label="Idioma">
-        <button data-lang="es" class="active">ES</button>
-        <button data-lang="en">EN</button>
+        <button data-lang="es" class="active">ES</button><button data-lang="en">EN</button>
       </div>
     </nav>
     <div class="nav-right">
       <div class="lang" role="group" aria-label="Idioma / Language">
-        <span class="lang-globe" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></span>
-        <button data-lang="es" class="active">ES</button>
-        <button data-lang="en">EN</button>
+        <span class="lang-globe" aria-hidden="true"><svg><use href="#i-globe"/></svg></span>
+        <button data-lang="es" class="active">ES</button><button data-lang="en">EN</button>
       </div>
-      <a class="nav-ig" href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener" aria-label="Instagram · @pannacottas_anto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="nav-ig" href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener" aria-label="Instagram · @pannacottas_anto"><svg><use href="#i-ig"/></svg></a>
       <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener"
-         data-es="Pedir" data-en="Order"
-         data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de PannaCottas Anto's."
-         data-msg-en="Hi Antonia! 🍓 I'd love to place an order with PannaCottas Anto's.">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.7-1.1-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.8 1 .8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
-        <span data-es="Pedir" data-en="Order">Pedir</span>
+         data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de Panna Cottas Anto's."
+         data-msg-en="Hi Antonia! 🍓 I'd love to place an order with Panna Cottas Anto's.">
+        <svg><use href="#i-wa"/></svg><span data-es="Pedir" data-en="Order">Pedir</span>
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </div>
 </header>
-
 <a id="top"></a>
 
-<!-- ===== HERO ===== -->
+<!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
   <div class="hero-bg"></div>
   <div class="wrap hero-inner">
     <div>
-      <span class="eyebrow" data-es="Postres artesanales · Katy, TX" data-en="Handmade desserts · Katy, TX">Postres artesanales · Katy, TX</span>
-      <h1 data-es="Llevamos el sabor de <em>casa</em> a cada postre." data-en="Bringing the flavors of <em>home</em> to every dessert.">Llevamos el sabor de <em>casa</em> a cada postre.</h1>
-      <p class="lead" data-es="Panna cotta, flan, cake pops y cookies hechos a mano en pequeñas cantidades, con ingredientes selectos y mucho cariño." data-en="Panna cotta, flan, cake pops and cookies, handcrafted in small batches with carefully selected ingredients and lots of care.">Panna cotta, flan, cake pops y cookies hechos a mano en pequeñas cantidades, con ingredientes selectos y mucho cariño.</p>
+      <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Postres artesanales · Katy, TX" data-en="Handcrafted desserts · Katy, TX">Postres artesanales · Katy, TX</span></span>
+      <h1 data-es="El sabor de casa, servido con <span class='script'>delicadeza</span>." data-en="The taste of home, served with <span class='script'>delicacy</span>.">El sabor de casa, servido con <span class="script">delicadeza</span>.</h1>
+      <p class="lead" data-es="Panna cotta cremosa y temblorosa, flan, mini tres leches, cake pops y cookies. Hechos a mano en pequeñas tandas, con ingredientes selectos y mucho cariño." data-en="Creamy, wobbly panna cotta, flan, mini tres leches, cake pops and cookies. Handmade in small batches with select ingredients and lots of love.">Panna cotta cremosa y temblorosa, flan, mini tres leches, cake pops y cookies. Hechos a mano en pequeñas tandas, con ingredientes selectos y mucho cariño.</p>
       <div class="hero-cta">
         <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener"
-           data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de PannaCottas Anto's."
-           data-msg-en="Hi Antonia! 🍓 I'd love to place an order with PannaCottas Anto's.">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.7-1.1-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.8 1 .8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
-          <span data-es="Pedir por WhatsApp" data-en="Order on WhatsApp">Pedir por WhatsApp</span>
+           data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de Panna Cottas Anto's."
+           data-msg-en="Hi Antonia! 🍓 I'd love to place an order with Panna Cottas Anto's.">
+          <svg><use href="#i-wa"/></svg><span data-es="Pedir por WhatsApp" data-en="Order on WhatsApp">Pedir por WhatsApp</span>
         </a>
         <a class="btn btn-ghost" href="#menu" data-es="Ver el menú" data-en="See the menu">Ver el menú</a>
       </div>
       <div class="trust">
-        <span data-es="Hecho a mano" data-en="Handcrafted">Hecho a mano</span>
-        <span data-es="Ingredientes selectos" data-en="Quality ingredients">Ingredientes selectos</span>
+        <span data-es="Hecho a mano" data-en="Handmade">Hecho a mano</span>
+        <span data-es="Pequeñas tandas" data-en="Small batches">Pequeñas tandas</span>
         <span data-es="Katy &amp; Houston" data-en="Katy &amp; Houston">Katy &amp; Houston</span>
       </div>
-      <a class="ig-chip" href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span data-es="Síguenos en Instagram" data-en="Follow us on Instagram">Síguenos en Instagram</span> <span class="handle">@pannacottas_anto</span></a>
+      <a class="ig-chip" href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener">
+        <svg><use href="#i-ig"/></svg><span data-es="Síguenos en Instagram" data-en="Follow us on Instagram">Síguenos en Instagram</span> <span class="handle">@pannacottas_anto</span>
+      </a>
     </div>
     <div class="stage">
-      <img class="hero-logo" src="assets/marca/logo.jpg" width="760" height="744" fetchpriority="high" decoding="async" alt="Logo PannaCottas Anto's — Delicacy in every layer, made with love">
+      <svg class="bfly-deco a"><use href="#i-bfly"/></svg>
+      <svg class="bfly-deco b"><use href="#i-bfly"/></svg>
+      <div class="arch">
+        <img src="assets/productos/mini-cakes.jpg" width="733" height="1100" fetchpriority="high" decoding="async" alt="Postres de Panna Cottas Anto's presentados con flores de lavanda">
+      </div>
+      <div class="emblem-float" data-emblem aria-hidden="true"></div>
     </div>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="about" id="sobre">
+<!-- ============ CINTA DE LEMA ============ -->
+<div class="ribbon dots">
+  <div class="wrap">
+    <span class="hr"></span>
+    <span class="lema" data-es="Delicadeza en cada capa, hecha con amor." data-en="Delicacy in every layer, made with love.">Delicadeza en cada capa, hecha con amor.</span>
+    <svg><use href="#i-heart"/></svg>
+    <span class="hr"></span>
+  </div>
+</div>
+
+<!-- ============ SOBRE ============ -->
+<section class="about dots" id="sobre">
   <div class="wrap about-grid">
     <div class="about-photo reveal">
-      <img class="about-img" src="assets/antonia.jpg" width="732" height="1100" loading="lazy" decoding="async" alt="Antonia, fundadora de PannaCottas Anto's">
+      <img src="assets/antonia.jpg" width="732" height="1100" loading="lazy" decoding="async" alt="Antonia, fundadora de Panna Cottas Anto's">
+      <span class="tag" data-es="Antonia · Fundadora" data-en="Antonia · Founder">Antonia · Fundadora</span>
     </div>
     <div class="about-text reveal">
-      <span class="eyebrow" data-es="Sobre nosotros" data-en="About us">Sobre nosotros</span>
+      <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="La historia" data-en="The story">La historia</span></span>
+      <h2 data-es="Una repostería de casa, con alma europea." data-en="A home bakery, with a European soul.">Una repostería de casa, con alma europea.</h2>
       <p class="quote" data-es="“De una receta de familia, de España a Texas — y de mi cocina a tu mesa.”" data-en="“From a family recipe, from Spain to Texas — and from my kitchen to your table.”">“De una receta de familia, de España a Texas — y de mi cocina a tu mesa.”</p>
       <p data-es="Mi negocio nació de una receta que fue parte de nuestra historia familiar durante muchos años. Somos originarios de España, y uno de los postres más queridos de nuestro restaurante era la panna cotta: un clásico italiano, muy popular en Europa, servido tradicionalmente con salsa de fresa." data-en="My business was born from a recipe that had been part of our family story for many years. We are originally from Spain, and one of the most loved desserts in our restaurant was panna cotta — a classic Italian dessert, very popular in Europe, traditionally served with strawberry sauce.">Mi negocio nació de una receta que fue parte de nuestra historia familiar durante muchos años. Somos originarios de España, y uno de los postres más queridos de nuestro restaurante era la panna cotta: un clásico italiano, muy popular en Europa, servido tradicionalmente con salsa de fresa.</p>
-      <p data-es="Al mudarnos a Texas, mi esposo me animó a compartir este postre con nuestra nueva comunidad. Lo adapté en presentaciones individuales y sumé nuevos sabores y toppings. Así nació PannaCottas Anto's, con variedades que van desde la clásica fresa hasta durazno, frutos rojos, dulce de leche y Nutella." data-en="When we moved to Texas, my husband encouraged me to share this dessert with our new community. I adapted it into individual cups and added new flavors and toppings. That is how PannaCottas Anto's was born, with varieties from the classic strawberry to peach, mixed berries, dulce de leche and Nutella.">Al mudarnos a Texas, mi esposo me animó a compartir este postre con nuestra nueva comunidad. Lo adapté en presentaciones individuales y sumé nuevos sabores y toppings. Así nació PannaCottas Anto's, con variedades que van desde la clásica fresa hasta durazno, frutos rojos, dulce de leche y Nutella.</p>
+      <p data-es="Al mudarnos a Texas, mi esposo me animó a compartir este postre con nuestra nueva comunidad. Lo adapté en presentaciones individuales y sumé nuevos sabores y toppings. Así nació Panna Cottas Anto's, con variedades que van desde la clásica fresa hasta durazno, frutos rojos, dulce de leche y Nutella." data-en="When we moved to Texas, my husband encouraged me to share this dessert with our new community. I adapted it into individual cups and added new flavors and toppings. That is how Panna Cottas Anto's was born, with varieties from the classic strawberry to peach, mixed berries, dulce de leche and Nutella.">Al mudarnos a Texas, mi esposo me animó a compartir este postre con nuestra nueva comunidad. Lo adapté en presentaciones individuales y sumé nuevos sabores y toppings. Así nació Panna Cottas Anto's, con variedades que van desde la clásica fresa hasta durazno, frutos rojos, dulce de leche y Nutella.</p>
       <p data-es="Con el tiempo agregué otros postres que reflejan mi pasión por la repostería: cake pops, cookies y flan. Mi meta sigue siendo la misma que al principio: crear postres caseros con cariño, ingredientes de calidad y ese toque especial que trae de vuelta los sabores de casa." data-en="Over time I added other desserts that reflect my passion for baking: cake pops, cookies and flan. My goal is still the same as at the start: to create homemade desserts with care, quality ingredients, and that special touch that brings back the flavors of home.">Con el tiempo agregué otros postres que reflejan mi pasión por la repostería: cake pops, cookies y flan. Mi meta sigue siendo la misma que al principio: crear postres caseros con cariño, ingredientes de calidad y ese toque especial que trae de vuelta los sabores de casa.</p>
-      <p class="signature">Antonia<span data-es="Fundadora · PannaCottas Anto's" data-en="Founder · PannaCottas Anto's">Fundadora · PannaCottas Anto's</span></p>
+      <p class="signature"><span class="name">Antonia</span><span class="role" data-es="Fundadora · Panna Cottas Anto's" data-en="Founder · Panna Cottas Anto's">Fundadora · Panna Cottas Anto's</span></p>
     </div>
   </div>
 </section>
 
-<!-- ===== PRODUCTS ===== -->
+<!-- ============ POSTRES ============ -->
 <section id="postres">
   <div class="wrap">
+    <div class="divider"><span></span><svg><use href="#i-heart"/></svg><span></span></div>
     <div class="prod-head reveal">
       <div class="sec-head">
-        <span class="eyebrow" data-es="Nuestros postres" data-en="Our desserts">Nuestros postres</span>
-        <h2 data-es="Frescos, bonitos y hechos con cariño" data-en="Fresh, pretty and made with care">Frescos, bonitos y hechos con cariño</h2>
+        <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestros postres" data-en="Our desserts">Nuestros postres</span></span>
+        <h2 data-es="El antojo bonito que se comparte." data-en="The pretty craving worth sharing.">El antojo bonito que se comparte.</h2>
       </div>
-      <span class="price-note" data-es="Desde $2.50 · Compra 5 y llévate 1 gratis" data-en="From $2.50 · Buy 5, get 1 free">Desde $2.50 · Compra 5 y llévate 1 gratis</span>
+      <span class="price-note"><svg><use href="#i-star"/></svg><span data-es="Desde $2.50 · Compra 5 y llévate 1 gratis" data-en="From $2.50 · Buy 5, get 1 free">Desde $2.50 · Compra 5 y llévate 1 gratis</span></span>
     </div>
-
     <div class="grid">
-      <!-- Card 1 -->
+
       <article class="card reveal">
-        <div class="card-img g1 pos-low"><img src="assets/productos/panna-cotta.jpg" width="847" height="1100" loading="lazy" decoding="async" alt="Panna cottas Anto's en vasitos individuales con topping de frutas"></div>
+        <div class="card-img low"><img src="assets/productos/panna-cotta.jpg" width="847" height="1100" loading="lazy" decoding="async" alt="Panna cottas Anto's en vasitos individuales"><span class="card-tag" data-es="La firma" data-en="Signature">La firma</span></div>
         <div class="card-body">
-          <h3 data-es="Panna Cotta" data-en="Panna Cotta">Panna Cotta</h3>
-          <p class="flavors" data-es="Fresa, frutos rojos, durazno, Nutella o dulce de leche. Cremosa y suave, en vasito individual." data-en="Strawberry, red berries, peach, Nutella or dulce de leche. Creamy and smooth, in individual cups.">Fresa, frutos rojos, durazno, Nutella o dulce de leche. Cremosa y suave, en vasito individual.</p>
+          <h3>Panna Cotta</h3>
+          <p class="flavors" data-es="Cremosa, temblorosa y suave. Fresa, frutos rojos, durazno, Nutella o dulce de leche, en vasito individual." data-en="Creamy, wobbly and smooth. Strawberry, red berries, peach, Nutella or dulce de leche, in individual cups.">Cremosa, temblorosa y suave. Fresa, frutos rojos, durazno, Nutella o dulce de leche, en vasito individual.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $4</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍓 Quiero pedir Panna Cotta (dime los sabores disponibles)." data-msg-en="Hi Antonia! 🍓 I'd like to order Panna Cotta (which flavors are available?).">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$4</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero pedir Panna Cotta (dime los sabores disponibles)." data-msg-en="Hi Antonia! 🍓 I'd like to order Panna Cotta (which flavors are available?).">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 2 -->
+
       <article class="card reveal">
-        <div class="card-img g2"><img src="assets/productos/flan.jpg" width="1100" height="862" loading="lazy" decoding="async" alt="Flan Anto's con dulce de leche y con crema chantilly"></div>
+        <div class="card-img"><img src="assets/productos/flan.jpg" width="1100" height="862" loading="lazy" decoding="async" alt="Flan Anto's con dulce de leche y crema chantilly"></div>
         <div class="card-body">
-          <h3 data-es="Flan" data-en="Flan">Flan</h3>
+          <h3>Flan</h3>
           <p class="flavors" data-es="Un clásico de siempre, con dulce de leche o crema chantilly." data-en="A timeless classic, with dulce de leche or whipped cream.">Un clásico de siempre, con dulce de leche o crema chantilly.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $3</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍮 Quiero pedir Flan." data-msg-en="Hi Antonia! 🍮 I'd like to order Flan.">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍮 Quiero pedir Flan." data-msg-en="Hi Antonia! 🍮 I'd like to order Flan.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 3 -->
+
       <article class="card reveal">
-        <div class="card-img g3"><img src="assets/productos/cake-pops.jpg" width="1100" height="870" loading="lazy" decoding="async" alt="Cake pops de colores decorados con sprinkles"></div>
+        <div class="card-img"><img src="assets/productos/cake-pops.jpg" width="1100" height="870" loading="lazy" decoding="async" alt="Cake pops de colores decorados con sprinkles"><span class="card-tag" data-es="Para eventos" data-en="For events">Para eventos</span></div>
         <div class="card-body">
-          <h3 data-es="Cake Pops" data-en="Cake Pops">Cake Pops</h3>
+          <h3>Cake Pops</h3>
           <p class="flavors" data-es="Bocaditos divertidos de vainilla o chocolate. Perfectos para compartir y celebrar." data-en="Fun little bites of vanilla or chocolate. Perfect to share and celebrate.">Bocaditos divertidos de vainilla o chocolate. Perfectos para compartir y celebrar.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $2.50</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍭 Quiero pedir Cake Pops (vainilla o chocolate)." data-msg-en="Hi Antonia! 🍭 I'd like to order Cake Pops (vanilla or chocolate).">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$2.50</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍭 Quiero pedir Cake Pops (vainilla o chocolate)." data-msg-en="Hi Antonia! 🍭 I'd like to order Cake Pops (vanilla or chocolate).">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 4 -->
+
       <article class="card reveal">
-        <div class="card-img g4"><img src="assets/productos/fresas-crema.jpg" width="480" height="310" loading="lazy" decoding="async" alt="Fresas con crema en vaso individual"></div>
+        <div class="card-img"><img src="assets/productos/fresas-crema.jpg" width="480" height="310" loading="lazy" decoding="async" alt="Fresas con crema en vaso individual"></div>
         <div class="card-body">
           <h3 data-es="Fresas con Crema" data-en="Strawberries &amp; Cream">Fresas con Crema</h3>
           <p class="flavors" data-es="Fresas frescas con crema suave. Sencillo, fresco e irresistible." data-en="Fresh strawberries with soft cream. Simple, fresh and irresistible.">Fresas frescas con crema suave. Sencillo, fresco e irresistible.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $3</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍓 Quiero pedir Fresas con Crema." data-msg-en="Hi Antonia! 🍓 I'd like to order Strawberries with Cream.">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero pedir Fresas con Crema." data-msg-en="Hi Antonia! 🍓 I'd like to order Strawberries with Cream.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 5 -->
+
       <article class="card reveal">
-        <div class="card-img g5"><img src="assets/productos/durazno-crema.jpg" width="464" height="290" loading="lazy" decoding="async" alt="Durazno con crema en vaso individual"></div>
+        <div class="card-img"><img src="assets/productos/durazno-crema.jpg" width="464" height="290" loading="lazy" decoding="async" alt="Durazno con crema en vaso individual"></div>
         <div class="card-body">
           <h3 data-es="Durazno con Crema" data-en="Peaches &amp; Cream">Durazno con Crema</h3>
           <p class="flavors" data-es="Durazno jugoso con crema. Un antojo dulce y delicado." data-en="Juicy peach with cream. A sweet, delicate craving.">Durazno jugoso con crema. Un antojo dulce y delicado.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $3</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍑 Quiero pedir Durazno con Crema." data-msg-en="Hi Antonia! 🍑 I'd like to order Peaches with Cream.">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍑 Quiero pedir Durazno con Crema." data-msg-en="Hi Antonia! 🍑 I'd like to order Peaches with Cream.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 6 -->
+
       <article class="card reveal">
-        <div class="card-img g6"><img src="assets/productos/cookies.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Cookies Anto's: Red Velvet, Oreo Monster, M&amp;M's, Kinder Bueno y más"></div>
+        <div class="card-img"><img src="assets/productos/cookies.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Cookies Anto's: Red Velvet, Oreo Monster, M&amp;M's y más"><span class="card-tag" data-es="14 sabores" data-en="14 flavors">14 sabores</span></div>
         <div class="card-body">
-          <h3 data-es="Cookies" data-en="Cookies">Cookies</h3>
+          <h3>Cookies</h3>
           <p class="flavors" data-es="Oreo Monster, Red Velvet, chips de chocolate, M&amp;M's, Kinder Bueno y más, según la temporada." data-en="Oreo Monster, Red Velvet, chocolate chips, M&amp;M's, Kinder Bueno and more, depending on the season.">Oreo Monster, Red Velvet, chips de chocolate, M&amp;M's, Kinder Bueno y más, según la temporada.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $3</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍪 Quiero pedir Cookies (dime los sabores de la temporada)." data-msg-en="Hi Antonia! 🍪 I'd like to order Cookies (which flavors are in season?).">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍪 Quiero pedir Cookies (dime los sabores de la temporada)." data-msg-en="Hi Antonia! 🍪 I'd like to order Cookies (which flavors are in season?).">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
-      <!-- Card 7 -->
+
       <article class="card reveal">
-        <div class="card-img g7"><img src="assets/productos/mini-cakes.jpg" width="733" height="1100" loading="lazy" decoding="async" alt="Mini cakes de tres leches Anto's con distintos toppings"></div>
+        <div class="card-img"><img src="assets/productos/mini-cakes-2.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Mini tres leches Anto's con distintos toppings"></div>
         <div class="card-body">
-          <h3 data-es="Mini Cakes de Tres Leches" data-en="Mini Tres Leches Cakes">Mini Cakes de Tres Leches</h3>
+          <h3 data-es="Mini Tres Leches" data-en="Mini Tres Leches">Mini Tres Leches</h3>
           <p class="flavors" data-es="Pastelitos individuales de tres leches (8 oz), con topping de Nutella, dulce de leche, durazno o fresa." data-en="Individual tres leches cakes (8 oz), topped with Nutella, dulce de leche, peach or strawberry.">Pastelitos individuales de tres leches (8 oz), con topping de Nutella, dulce de leche, durazno o fresa.</p>
           <div class="card-foot">
-            <span class="from"><span data-es="Desde" data-en="From">Desde</span> $5</span>
-            <a class="order-link wa" href="#" target="_blank" rel="noopener"
-               data-msg-es="¡Hola Antonia! 🍰 Quiero pedir un Mini Cake de Tres Leches (topping: Nutella, dulce de leche, durazno o fresa)." data-msg-en="Hi Antonia! 🍰 I'd like to order a Mini Tres Leches Cake (topping: Nutella, dulce de leche, peach or strawberry).">
-              <span data-es="Pedir" data-en="Order">Pedir</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$5</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍰 Quiero pedir Mini Cakes de Tres Leches." data-msg-en="Hi Antonia! 🍰 I'd like to order Mini Tres Leches Cakes.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
         </div>
       </article>
+
+      <article class="card card-cta reveal">
+        <div class="cta-card-body">
+          <svg class="cta-bfly"><use href="#i-bfly"/></svg>
+          <h3 data-es="¿No sabes cuál elegir?" data-en="Not sure which to pick?">¿No sabes cuál elegir?</h3>
+          <p data-es="Cuéntame para cuántas personas es y yo te armo la caja. También hacemos pedidos para cumpleaños, baby showers y eventos." data-en="Tell me how many people it's for and I'll put the box together. We also take orders for birthdays, baby showers and events.">Cuéntame para cuántas personas es y yo te armo la caja. También hacemos pedidos para cumpleaños, baby showers y eventos.</p>
+          <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero armar una caja de postres, ¿me ayudas a elegir?" data-msg-en="Hi Antonia! 🍓 I'd like to put together a dessert box, can you help me choose?">
+            <svg><use href="#i-wa"/></svg><span data-es="Armar mi pedido" data-en="Build my order">Armar mi pedido</span></a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- ===== MENÚ ===== -->
-<section class="menu-sec" id="menu">
+<!-- ============ MIÉRCOLES DE WOBBLE ============ -->
+<section class="wobble-band" id="wobble">
+  <div class="dots-layer"></div>
+  <div class="wrap wobble-inner">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestro ritual" data-en="Our ritual">Nuestro ritual</span></span>
+      <h2 data-es="Miércoles de <span class='script'>Wobble</span>" data-en="<span class='script'>Wobble</span> Wednesdays">Miércoles de <span class="script">Wobble</span></h2>
+      <p data-es="Cada miércoles subimos el tembleque de un sabor distinto. Ese movimiento suave es nuestra firma: la prueba de que la panna cotta está recién hecha, cremosa y en su punto." data-en="Every Wednesday we post the wobble of a different flavor. That gentle jiggle is our signature: proof the panna cotta is freshly made, creamy and just right.">Cada miércoles subimos el tembleque de un sabor distinto. Ese movimiento suave es nuestra firma: la prueba de que la panna cotta está recién hecha, cremosa y en su punto.</p>
+      <div class="pillars">
+        <div class="pillar"><strong data-es="Recién hecho" data-en="Freshly made">Recién hecho</strong><span data-es="Se prepara el mismo día del pedido." data-en="Prepared the same day as your order.">Se prepara el mismo día del pedido.</span></div>
+        <div class="pillar"><strong data-es="Pequeñas tandas" data-en="Small batches">Pequeñas tandas</strong><span data-es="Nada industrial: cada vasito pasa por mis manos." data-en="Nothing industrial: every cup passes through my hands.">Nada industrial: cada vasito pasa por mis manos.</span></div>
+        <div class="pillar"><strong data-es="De casa a Texas" data-en="From home to Texas">De casa a Texas</strong><span data-es="La receta que cruzó el océano, desde España." data-en="The recipe that crossed the ocean, from Spain.">La receta que cruzó el océano, desde España.</span></div>
+      </div>
+      <div class="wobble-actions">
+        <a class="btn btn-light" href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener">
+          <svg><use href="#i-ig"/></svg><span data-es="Ver el wobble de esta semana" data-en="See this week's wobble">Ver el wobble de esta semana</span></a>
+      </div>
+    </div>
+    <div class="wobble-media reveal">
+      <video controls playsinline preload="metadata" poster="assets/booth/booth-poster.jpg" aria-label="Recorrido por el booth de Panna Cottas Anto's">
+        <source src="assets/booth/booth-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENÚ ============ -->
+<section class="menu-sec dots" id="menu">
   <div class="wrap">
     <div class="menu-head reveal">
       <div class="sec-head">
-        <span class="eyebrow" data-es="Nuestro menú" data-en="Our menu">Nuestro menú</span>
+        <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestro menú" data-en="Our menu">Nuestro menú</span></span>
         <h2 data-es="Sabores y precios, en un vistazo" data-en="Flavors and prices, at a glance">Sabores y precios, en un vistazo</h2>
         <p data-es="Toca cualquier carta para verla en grande y leer todos los sabores." data-en="Tap any card to see it full size and read every flavor.">Toca cualquier carta para verla en grande y leer todos los sabores.</p>
       </div>
-      <span class="promo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 14.5 8.5 20.5 9.3 16.2 13.5 17.3 19.5 12 16.7 6.7 19.5 7.8 13.5 3.5 9.3 9.5 8.5Z"/></svg>
-        <span data-es="Compra 5 y llévate 1 gratis" data-en="Buy 5, get 1 free">Compra 5 y llévate 1 gratis</span>
-      </span>
+      <span class="promo"><svg><use href="#i-star"/></svg><span data-es="Compra 5 y llévate 1 gratis" data-en="Buy 5, get 1 free">Compra 5 y llévate 1 gratis</span></span>
     </div>
-
     <div class="menu-grid reveal">
-      <button type="button" class="menu-tile feature" data-full="assets/menu/menu-general.jpg"
-              data-cap-es="Menú general · PannaCottas Anto's" data-cap-en="Full menu · PannaCottas Anto's"
-              aria-label="Ver el menú general en grande">
-        <img src="assets/menu/thumbs/menu-general.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Menú general de PannaCottas Anto's">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
-
-      <button type="button" class="menu-tile" data-full="assets/menu/cookies.jpg"
-              data-cap-es="Cookies Anto's · 14 sabores a $3" data-cap-en="Anto's Cookies · 14 flavors at $3"
-              aria-label="Ver la carta de cookies en grande">
-        <img src="assets/menu/thumbs/cookies.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cookies de PannaCottas Anto's">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
-
-      <button type="button" class="menu-tile" data-full="assets/menu/mini-cakes.jpg"
-              data-cap-es="Mini Cakes de Tres Leches · $5 c/u" data-cap-en="Mini Tres Leches Cakes · $5 each"
-              aria-label="Ver la carta de mini cakes en grande">
-        <img src="assets/menu/thumbs/mini-cakes.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de mini cakes de tres leches">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
-
-      <button type="button" class="menu-tile" data-full="assets/menu/cake-pops.jpg"
-              data-cap-es="Cake Pops · $2.50 c/u · 6 por $12.50" data-cap-en="Cake Pops · $2.50 each · 6 for $12.50"
-              aria-label="Ver la carta de cake pops en grande">
-        <img src="assets/menu/thumbs/cake-pops.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cake pops para eventos">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
-
-      <button type="button" class="menu-tile" data-full="assets/menu/flan.jpg"
-              data-cap-es="Flan · dulce de leche o crema · $3" data-cap-en="Flan · dulce de leche or whipped cream · $3"
-              aria-label="Ver la carta de flan en grande">
-        <img src="assets/menu/thumbs/flan.jpg" width="420" height="620" loading="lazy" decoding="async" alt="Carta de flan de PannaCottas Anto's">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
-
-      <button type="button" class="menu-tile" data-full="assets/menu/fresas-durazno.jpg"
-              data-cap-es="Fresas y durazno con crema · $3" data-cap-en="Strawberry &amp; peach with cream · $3"
-              aria-label="Ver la carta de fresas y durazno con crema en grande">
-        <img src="assets/menu/thumbs/fresas-durazno.jpg" width="468" height="620" loading="lazy" decoding="async" alt="Carta de fresas con crema y durazno con crema">
-        <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-      </button>
+      <button type="button" class="menu-tile" data-full="assets/menu/menu-general.jpg" data-cap-es="Menú general · Panna Cottas Anto's" data-cap-en="Full menu · Panna Cottas Anto's" aria-label="Ver el menú general en grande">
+        <img src="assets/menu/thumbs/menu-general.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Menú general de Panna Cottas Anto's"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/cookies.jpg" data-cap-es="Cookies Anto's · 14 sabores a $3" data-cap-en="Anto's Cookies · 14 flavors at $3" aria-label="Ver la carta de cookies en grande">
+        <img src="assets/menu/thumbs/cookies.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cookies"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/mini-cakes.jpg" data-cap-es="Mini Tres Leches · $5 c/u" data-cap-en="Mini Tres Leches · $5 each" aria-label="Ver la carta de mini cakes en grande">
+        <img src="assets/menu/thumbs/mini-cakes.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de mini cakes de tres leches"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/cake-pops.jpg" data-cap-es="Cake Pops · $2.50 c/u · 6 por $12.50" data-cap-en="Cake Pops · $2.50 each · 6 for $12.50" aria-label="Ver la carta de cake pops en grande">
+        <img src="assets/menu/thumbs/cake-pops.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cake pops"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/flan.jpg" data-cap-es="Flan · dulce de leche o crema · $3" data-cap-en="Flan · dulce de leche or whipped cream · $3" aria-label="Ver la carta de flan en grande">
+        <img src="assets/menu/thumbs/flan.jpg" width="420" height="620" loading="lazy" decoding="async" alt="Carta de flan"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/fresas-durazno.jpg" data-cap-es="Fresas y durazno con crema · $3" data-cap-en="Strawberry &amp; peach with cream · $3" aria-label="Ver la carta de fresas y durazno en grande">
+        <img src="assets/menu/thumbs/fresas-durazno.jpg" width="468" height="620" loading="lazy" decoding="async" alt="Carta de fresas y durazno con crema"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
     </div>
   </div>
 </section>
 
-<!-- ===== BOOTH ===== -->
-<section class="booth" id="booth">
+<!-- ============ BOOTH ============ -->
+<section class="booth dots" id="booth">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow" data-es="Nuestro booth" data-en="Our booth">Nuestro booth</span>
+      <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestro booth" data-en="Our booth">Nuestro booth</span></span>
       <h2 data-es="Nos vemos en el mercado" data-en="Come see us at the market">Nos vemos en el mercado</h2>
       <p data-es="Cada fin de semana montamos nuestro puesto en Katy: vitrina llena, mariposas moradas y postres recién hechos." data-en="Every weekend we set up our stand in Katy: a full display, purple butterflies and freshly made desserts.">Cada fin de semana montamos nuestro puesto en Katy: vitrina llena, mariposas moradas y postres recién hechos.</p>
     </div>
-
     <div class="booth-grid reveal">
-      <div class="booth-reel">
-        <video controls playsinline preload="metadata" poster="assets/booth/booth-poster.jpg"
-               aria-label="Recorrido por el booth de PannaCottas Anto's">
-          <source src="assets/booth/booth-video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="booth-stack">
-        <button type="button" class="booth-shot" data-full="assets/booth/booth-1.jpg"
-                data-cap-es="Nuestro puesto montado en el mercado de Katy" data-cap-en="Our stand set up at the Katy market"
-                aria-label="Ver foto del booth en grande">
-          <img src="assets/booth/booth-1.jpg" width="1600" height="1142" loading="lazy" decoding="async" alt="Booth de PannaCottas Anto's con carpa lila y mesa llena de postres">
-          <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-        </button>
-        <div class="booth-pair">
-          <button type="button" class="booth-shot" data-full="assets/booth/booth-2.jpg"
-                  data-cap-es="Vitrina de postres: panna cottas, mini cakes y cake pops" data-cap-en="Dessert display: panna cottas, mini cakes and cake pops"
-                  aria-label="Ver foto de la mesa de postres en grande">
-            <img src="assets/booth/booth-2.jpg" width="975" height="1300" loading="lazy" decoding="async" alt="Mesa del booth con panna cottas, mini cakes y cake pops">
-            <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-          </button>
-          <button type="button" class="booth-shot" data-full="assets/productos/mini-cakes-2.jpg"
-                  data-cap-es="Mini cakes de tres leches recién hechos" data-cap-en="Freshly made mini tres leches cakes"
-                  aria-label="Ver foto de los mini cakes en grande">
-            <img src="assets/productos/mini-cakes-2.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Cuatro mini cakes de tres leches con distintos toppings">
-            <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-          </button>
-        </div>
-      </div>
+      <button type="button" class="booth-shot" data-full="assets/booth/booth-1.jpg" data-cap-es="Nuestro puesto montado en el mercado de Katy" data-cap-en="Our stand set up at the Katy market" aria-label="Ver foto del booth en grande">
+        <img src="assets/booth/booth-1.jpg" width="1600" height="1142" loading="lazy" decoding="async" alt="Booth de Panna Cottas Anto's con carpa lila"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="booth-shot mid" data-full="assets/booth/booth-2.jpg" data-cap-es="Vitrina de postres: panna cottas, mini cakes y cake pops" data-cap-en="Dessert display: panna cottas, mini cakes and cake pops" aria-label="Ver foto de la mesa de postres en grande">
+        <img src="assets/booth/booth-2.jpg" width="975" height="1300" loading="lazy" decoding="async" alt="Mesa del booth con panna cottas, mini cakes y cake pops"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="booth-shot wide" data-full="assets/productos/mini-cakes-2.jpg" data-cap-es="Mini tres leches recién hechos" data-cap-en="Freshly made mini tres leches" aria-label="Ver foto de los mini cakes en grande">
+        <img src="assets/productos/mini-cakes-2.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Cuatro mini tres leches con distintos toppings"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="booth-shot wide" data-full="assets/booth/booth-poster.jpg" data-cap-es="El puesto, listo para el fin de semana" data-cap-en="The stand, ready for the weekend" aria-label="Ver foto del puesto en grande">
+        <img src="assets/booth/booth-poster.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="El puesto listo para el fin de semana"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
     </div>
-
-    <p class="booth-note reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      <span data-es="¿Quieres saber dónde estaremos este fin de semana? Escríbenos por WhatsApp o síguenos en Instagram." data-en="Want to know where we'll be this weekend? Message us on WhatsApp or follow us on Instagram.">¿Quieres saber dónde estaremos este fin de semana? Escríbenos por WhatsApp o síguenos en Instagram.</span>
-    </p>
+    <p class="booth-note reveal"><svg><use href="#i-pin"/></svg><span data-es="¿Quieres saber dónde estaremos este fin de semana? Escríbenos por WhatsApp o síguenos en Instagram." data-en="Want to know where we'll be this weekend? Message us on WhatsApp or follow us on Instagram.">¿Quieres saber dónde estaremos este fin de semana? Escríbenos por WhatsApp o síguenos en Instagram.</span></p>
   </div>
 </section>
 
-<!-- ===== CTA BAND ===== -->
-<section>
-  <div class="wrap">
-    <div class="cta-band reveal">
+<!-- ============ CTA ============ -->
+<div class="wrap">
+  <section class="cta-band reveal">
+    <div class="dots-layer"></div>
+    <div class="cta-inner">
+      <svg class="emblem-mini" viewBox="0 0 24 24"><use href="#i-bfly"/></svg>
       <h2 data-es="¿Se te antojó?" data-en="Craving something sweet?">¿Se te antojó?</h2>
-      <p data-es="Escríbeme por WhatsApp y arma tu pedido. Ideal para reuniones, celebraciones o solo para consentirte." data-en="Message me on WhatsApp and build your order. Perfect for gatherings, celebrations, or simply to treat yourself.">Escríbeme por WhatsApp y arma tu pedido. Ideal para reuniones, celebraciones o solo para consentirte.</p>
-      <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener"
-         data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de PannaCottas Anto's." data-msg-en="Hi Antonia! 🍓 I'd love to place an order with PannaCottas Anto's.">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.7-1.1-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.8 1 .8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
-        <span data-es="Pedir por WhatsApp" data-en="Order on WhatsApp">Pedir por WhatsApp</span>
-      </a>
+      <p class="lema-script" data-es="con cariño, Anto's" data-en="with love, Anto's">con cariño, Anto's</p>
+      <p data-es="Escríbeme por WhatsApp y armamos tu pedido juntos. Ideal para reuniones, celebraciones o solo para consentirte." data-en="Message me on WhatsApp and we'll build your order together. Perfect for gatherings, celebrations, or simply to treat yourself.">Escríbeme por WhatsApp y armamos tu pedido juntos. Ideal para reuniones, celebraciones o solo para consentirte.</p>
+      <a class="btn btn-primary wa" style="margin-top:1.4rem" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de Panna Cottas Anto's." data-msg-en="Hi Antonia! 🍓 I'd love to place an order with Panna Cottas Anto's.">
+        <svg><use href="#i-wa"/></svg><span data-es="Pedir por WhatsApp" data-en="Order on WhatsApp">Pedir por WhatsApp</span></a>
       <div class="cta-alt">
-        <a href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          @pannacottas_anto
-        </a>
-        <a href="mailto:pannacottastx@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          pannacottastx@gmail.com
-        </a>
+        <a href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@pannacottas_anto</a>
+        <a href="mailto:pannacottastx@gmail.com"><svg><use href="#i-mail"/></svg>pannacottastx@gmail.com</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<!-- ===== FOOTER ===== -->
-<footer>
+<!-- ============ FOOTER ============ -->
+<footer class="dots">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <div class="brand"><span class="brand-badge" role="img" aria-label="PannaCottas Anto's"></span><span class="brand-name">PannaCottas <em>Anto's</em></span></div>
-        <p data-es="Llevamos el sabor de casa a cada postre." data-en="Bringing the flavors of home to every dessert.">Llevamos el sabor de casa a cada postre.</p>
+        <div class="lockup">
+          <svg class="mark"><use href="#i-bfly"/></svg>
+          <span class="words"><span class="l1">Panna Cottas</span><span class="l2">Anto's</span></span>
+        </div>
+        <p data-es="Delicadeza en cada capa, hecha con amor." data-en="Delicacy in every layer, made with love.">Delicadeza en cada capa, hecha con amor.</p>
       </div>
       <div class="foot-col">
         <h4 data-es="Explorar" data-en="Explore">Explorar</h4>
         <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
-        <a href="#sobre" data-es="Sobre nosotros" data-en="About">Sobre nosotros</a>
+        <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
         <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+        <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
         <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
         <a href="#booth" data-es="Booth" data-en="Booth">Booth</a>
       </div>
       <div class="foot-col">
         <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
-        <a class="wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de PannaCottas Anto's." data-msg-en="Hi Antonia! 🍓 I'd love to place an order with PannaCottas Anto's.">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
-          WhatsApp
-        </a>
-        <a href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
-          @pannacottas_anto
-        </a>
-        <a href="mailto:pannacottastx@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          pannacottastx@gmail.com
-        </a>
-        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Katy, TX</p>
+        <a class="wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Me encantaría hacer un pedido de Panna Cottas Anto's." data-msg-en="Hi Antonia! 🍓 I'd love to place an order with Panna Cottas Anto's.">WhatsApp +1 346 579 4833</a>
+        <a href="https://www.instagram.com/pannacottas_anto" target="_blank" rel="noopener">@pannacottas_anto</a>
+        <a href="mailto:pannacottastx@gmail.com">pannacottastx@gmail.com</a>
+        <a href="#" style="pointer-events:none;opacity:.75">Katy, TX</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> PannaCottas Anto's · <span data-es="Hecho con cariño en Katy, TX" data-en="Made with love in Katy, TX">Hecho con cariño en Katy, TX</span></span>
-      <span data-es="Diseño por" data-en="Design by">Diseño por</span> <a href="#" style="margin-left:-.3rem">PYRAXIS</a>
+      <span>© <span id="yr"></span> Panna Cottas Anto's</span>
+      <span data-es="Hecho a mano en Katy, Texas" data-en="Handmade in Katy, Texas">Hecho a mano en Katy, Texas</span>
     </div>
   </div>
 </footer>
 
-<!-- ===== LIGHTBOX ===== -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Galería">
-  <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Cerrar">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
-  </button>
-  <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg>
-  </button>
-  <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Siguiente">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
-  </button>
-  <figure class="lb-fig">
-    <img id="lbImg" src="" alt="">
-    <figcaption class="lb-cap" id="lbCap"></figcaption>
-  </figure>
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb-btn" id="lbClose" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lb-btn" id="lbPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn" id="lbNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
 </div>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Bakery",
-  "name": "PannaCottas Anto's",
-  "description": "Postres caseros hechos a mano en Katy, TX: panna cotta, flan, cake pops, mini cakes de tres leches y cookies.",
-  "image": "https://pannacottas-antos.vercel.app/assets/marca/og.jpg",
-  "url": "https://pannacottas-antos.vercel.app/",
-  "telephone": "+1-346-579-4833",
-  "email": "pannacottastx@gmail.com",
-  "priceRange": "$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Katy",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "areaServed": ["Katy, TX", "Houston, TX"],
-  "sameAs": ["https://www.instagram.com/pannacottas_anto"]
-}
-</script>
-
 <script>
-  // ---- WhatsApp links ----
-  var PHONE = "13465794833"; // +1 346 579 4833
+  // ---- emblema ----
+  (function(){
+    var tpl = document.getElementById("emblemTpl");
+    document.querySelectorAll("[data-emblem]").forEach(function(slot){
+      slot.appendChild(tpl.content.cloneNode(true));
+    });
+  })();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // ---- WhatsApp ----
+  var PHONE = "13465794833";
   function currentLang(){ return document.documentElement.lang === "en" ? "en" : "es"; }
   function refreshWhatsApp(){
     var lang = currentLang();
@@ -759,7 +780,7 @@
     });
   }
 
-  // ---- Language toggle ----
+  // ---- idioma ----
   function setLang(lang){
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-" + lang + "]").forEach(function(el){
@@ -769,8 +790,8 @@
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
     });
     document.title = lang === "en"
-      ? "PannaCottas Anto's · Handmade desserts in Katy, TX"
-      : "PannaCottas Anto's · Postres artesanales en Katy, TX";
+      ? "Panna Cottas Anto's · Handcrafted desserts in Katy, TX"
+      : "Panna Cottas Anto's · Postres artesanales en Katy, TX";
     refreshWhatsApp();
     if (lb.classList.contains("open")) { lbRender(); }
   }
@@ -778,9 +799,9 @@
     b.addEventListener("click", function(){ setLang(b.getAttribute("data-lang")); });
   });
 
-  // ---- Mobile menu ----
+  // ---- menú móvil ----
   var toggle = document.getElementById("menuToggle");
-  var links = document.getElementById("navLinks");
+  var links  = document.getElementById("navLinks");
   toggle.addEventListener("click", function(){
     var open = links.classList.toggle("open");
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -789,16 +810,13 @@
     a.addEventListener("click", function(){ links.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); });
   });
 
-  // ---- Lightbox (cartas del menú + fotos del booth) ----
-  var lb      = document.getElementById("lightbox");
-  var lbImg   = document.getElementById("lbImg");
-  var lbCap   = document.getElementById("lbCap");
-  var lbItems = Array.prototype.slice.call(document.querySelectorAll("[data-full]"));
-  var lbIndex = 0, lbLastFocus = null;
-
-  function lbCaption(el){
-    return el.getAttribute("data-cap-" + currentLang()) || el.getAttribute("data-cap-es") || "";
-  }
+  // ---- lightbox ----
+  var lb = document.getElementById("lightbox"),
+      lbImg = document.getElementById("lbImg"),
+      lbCap = document.getElementById("lbCap"),
+      lbItems = Array.prototype.slice.call(document.querySelectorAll("[data-full]")),
+      lbIndex = 0, lbLastFocus = null;
+  function lbCaption(el){ return el.getAttribute("data-cap-" + currentLang()) || el.getAttribute("data-cap-es") || ""; }
   function lbRender(){
     var el = lbItems[lbIndex];
     lbImg.src = el.getAttribute("data-full");
@@ -806,48 +824,34 @@
     lbCap.textContent = lbCaption(el);
   }
   function lbOpen(i){
-    lbLastFocus = document.activeElement;
-    lbIndex = i;
-    lbRender();
-    lb.classList.add("open");
-    lb.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-    document.getElementById("lbClose").focus();
+    lbLastFocus = document.activeElement; lbIndex = i; lbRender();
+    lb.classList.add("open"); lb.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden"; document.getElementById("lbClose").focus();
   }
   function lbClose(){
-    lb.classList.remove("open");
-    lb.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-    lbImg.src = "";
+    lb.classList.remove("open"); lb.setAttribute("aria-hidden","true");
+    document.body.style.overflow = ""; lbImg.src = "";
     if (lbLastFocus) { lbLastFocus.focus(); }
   }
-  function lbStep(delta){
-    lbIndex = (lbIndex + delta + lbItems.length) % lbItems.length;
-    lbRender();
-  }
-
-  lbItems.forEach(function(el, i){
-    el.addEventListener("click", function(){ lbOpen(i); });
-  });
+  function lbStep(d){ lbIndex = (lbIndex + d + lbItems.length) % lbItems.length; lbRender(); }
+  lbItems.forEach(function(el,i){ el.addEventListener("click", function(){ lbOpen(i); }); });
   document.getElementById("lbClose").addEventListener("click", lbClose);
   document.getElementById("lbPrev").addEventListener("click", function(){ lbStep(-1); });
   document.getElementById("lbNext").addEventListener("click", function(){ lbStep(1); });
-  lb.addEventListener("click", function(e){ if (e.target === lb) { lbClose(); } });
+  lb.addEventListener("click", function(e){ if (e.target === lb) lbClose(); });
   document.addEventListener("keydown", function(e){
-    if (!lb.classList.contains("open")) { return; }
-    if (e.key === "Escape")     { lbClose(); }
-    if (e.key === "ArrowLeft")  { lbStep(-1); }
-    if (e.key === "ArrowRight") { lbStep(1); }
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") lbClose();
+    if (e.key === "ArrowLeft") lbStep(-1);
+    if (e.key === "ArrowRight") lbStep(1);
   });
 
-  // ---- Scroll reveal ----
+  // ---- reveal ----
   var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, { threshold: .12 });
+    entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold:.12, rootMargin:"0px 0px -40px" });
   document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
 
-  // ---- Init ----
-  document.getElementById("year").textContent = new Date().getFullYear();
   refreshWhatsApp();
 </script>
 </body>

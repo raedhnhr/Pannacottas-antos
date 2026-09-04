@@ -1,4 +1,7 @@
-# PannaCottas Anto's — sitio web
+# Panna Cottas Anto's — sitio web
+
+> Rediseñado en septiembre 2026 según el concepto de rebranding de PYRAXIS.
+> El sitio anterior está respaldado en `../_backups/index-prerebranding-20260903.html`.
 
 Sitio estático (HTML + CSS + JS, sin dependencias ni build). Se despliega tal cual en Vercel.
 
@@ -43,12 +46,43 @@ assets/
 
 ## Secciones
 
-`Inicio` · `Sobre nosotros` · `Postres` · `Menú` · `Booth`
+`Inicio` · `La historia` · `Postres` · `El wobble` · `Menú` · `Booth`
 
-- **Postres** — 7 tarjetas con foto real, precio y botón de pedido por WhatsApp.
-- **Menú** — las 6 cartas de diseño. Se hace clic en cualquiera y se abre a pantalla completa,
-  con flechas para pasar de una a otra (también funciona con ← → y Esc).
-- **Booth** — el video del puesto más 3 fotos, todas ampliables.
+- **Postres** — 7 tarjetas con foto real, precio y botón de pedido por WhatsApp, más una
+  tarjeta final de "arma tu caja" para pedidos de eventos.
+- **El wobble** — "Miércoles de Wobble", el ritual de marca. Lleva el video del puesto en
+  formato reel y enlaza a Instagram.
+- **Menú** — las 6 cartas de diseño, en rejilla de 3. Se hace clic en cualquiera y se abre a
+  pantalla completa, con flechas para pasar de una a otra (también funciona con ← → y Esc).
+- **Booth** — 4 fotos del puesto, todas ampliables.
+
+## Sistema de marca
+
+Todo el color vive en variables CSS al inicio del `<style>`. **No metas colores sueltos:**
+usa la variable que corresponda.
+
+| Variable | Hex | Uso |
+|---|---|---|
+| `--porcelana` | `#F7F2ED` | fondo principal (~46% de la página) |
+| `--lavanda` | `#A187C4` | color madre: firma, mariposas, acentos |
+| `--ciruela` | `#3E2E4F` | texto y bloques oscuros (reemplaza al negro) |
+| `--almendra` | `#E8DCC8` | neutro cálido, bandas alternas |
+| `--rosa` / `--pistacho` | `#E3AEC8` / `#A9C2A0` | guiños de postre, nunca fondo dominante |
+| `--oro` | `#C0985A` | solo hilos finos y detalles |
+| `--violeta` / `--violeta-ink` | `#B95AE6` / `#8A34B8` | acento digital: botones y enlaces |
+
+> El violeta plano con texto blanco no pasa contraste AA, por eso los botones usan degradado
+> de `--violeta` a `--violeta-ink`. Si lo cambias a plano, el texto tiene que ir en ciruela.
+
+**Tipografías** (Google Fonts, ya enlazadas): Cormorant Garamond para titulares · Sacramento
+**solo** para "Anto's" y palabras-emoción · Jost para todo lo funcional.
+
+**Escritura del nombre:** siempre `Panna Cottas` (dos palabras) + `Anto's` con apóstrofo.
+Nunca "PannaCottas" pegado ni "By Anto".
+
+**Motivos:** la mariposa, el divisor de corazón, el patrón de puntos pastel y el *wobble*
+(la animación suave del hero) están como símbolos SVG reutilizables al inicio del `<body>`;
+se insertan con `<svg><use href="#i-bfly"/></svg>`.
 
 ## Notas de mantenimiento
 
@@ -60,3 +94,5 @@ assets/
   actualiza también el `src` (y el `data-full` en las cartas del menú y las fotos del booth).
 - **Fotos nuevas:** conviene bajarlas a ~1100 px de lado largo y calidad ~80 antes de subirlas,
   para que el sitio siga cargando rápido.
+- **Pendiente:** `assets/marca/og.jpg` (la imagen que se ve al compartir el link) sigue siendo
+  la del diseño anterior. Hay que rehacerla con el lockup nuevo, 1200×630.
