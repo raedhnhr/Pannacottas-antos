@@ -164,7 +164,7 @@
   .stage{position:relative;display:flex;justify-content:center;align-items:center}
   .arch{position:relative;width:min(430px,80%);aspect-ratio:4/5;border-radius:999px 999px var(--r-l) var(--r-l);
     overflow:hidden;box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.7);animation:wobble 7s ease-in-out infinite}
-  .arch img{width:100%;height:100%;object-fit:cover;object-position:center 48%}
+  .arch img{width:100%;height:100%;object-fit:cover;object-position:53% center}
   .arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(62,46,79,0) 55%,rgba(62,46,79,.28))}
   @keyframes wobble{0%,100%{transform:rotate(0) translateY(0)}30%{transform:rotate(-.9deg) translateY(-6px)}70%{transform:rotate(.9deg) translateY(3px)}}
   .emblem-float{position:absolute;right:-6px;bottom:6%;width:clamp(120px,17vw,158px);height:auto;
@@ -185,7 +185,7 @@
   .about{position:relative;background:var(--almendra-soft);overflow:hidden}
   .about-grid{position:relative;z-index:2;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center;padding:clamp(3rem,6vw,5.5rem) 0}
   .about-photo{position:relative}
-  .about-photo img{width:100%;border-radius:999px 999px var(--r-l) var(--r-l);box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.7)}
+  .about-photo img{width:100%;height:auto;display:block;border-radius:999px 999px var(--r-l) var(--r-l);box-shadow:var(--shadow-l);border:1px solid rgba(255,255,255,.7)}
   .about-photo .tag{position:absolute;left:50%;transform:translateX(-50%);bottom:-18px;background:var(--porcelana);
     border:1px solid rgba(62,46,79,.10);border-radius:999px;padding:.5rem 1.15rem;box-shadow:var(--shadow-m);
     font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ciruela-soft);white-space:nowrap}
@@ -466,7 +466,7 @@
       <svg class="bfly-deco a"><use href="#i-bfly"/></svg>
       <svg class="bfly-deco b"><use href="#i-bfly"/></svg>
       <div class="arch">
-        <img src="assets/productos/mini-cakes.jpg" width="733" height="1100" fetchpriority="high" decoding="async" alt="Postres de Panna Cottas Anto's presentados con flores de lavanda">
+        <img src="assets/productos/hero-pannacotta.jpg" width="1400" height="933" fetchpriority="high" decoding="async" alt="Panna cottas Anto's: vasito de dulce de leche con chocolate blanco, y variedades de fresa y frutos rojos">
       </div>
       <div class="emblem-float" data-emblem aria-hidden="true"></div>
     </div>

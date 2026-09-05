@@ -39,6 +39,7 @@ assets/
 │  ├─ badge.png                Ícono de marca (header, footer y favicon)
 │  └─ og.jpg                   Imagen de vista previa al compartir el link (1200×630)
 ├─ productos/                  Fotos de las 7 tarjetas de postres
+│  └─ hero-pannacotta.jpg     Foto principal de la portada (hero)
 ├─ menu/                       Cartas del menú a tamaño completo (se abren al hacer clic)
 │  └─ thumbs/                  Miniaturas ligeras para la grilla
 └─ booth/                      Fotos del puesto + video (con su imagen de portada)
