@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Panna Cottas Anto's · Postres artesanales en Katy, TX</title>
-<meta name="description" content="Postres artesanales hechos a mano en pequeñas tandas en Katy, TX. Panna cotta, flan, cake pops, mini tres leches y cookies. Mira el menú y pide por WhatsApp." />
+<meta name="description" content="Postres artesanales hechos a mano en pequeñas tandas en Katy, TX. Panna cotta, flan, cake pops, mini tres leches y cookies, y bandejas de mini postres para eventos. Mira el menú y pide por WhatsApp." />
 <meta name="theme-color" content="#3E2E4F" />
 
 <link rel="canonical" href="https://pannacottas-antos.vercel.app/" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Panna Cottas Anto's" />
 <meta property="og:title" content="Panna Cottas Anto's · Postres artesanales en Katy, TX" />
-<meta property="og:description" content="Panna cotta, flan, cake pops, mini tres leches y cookies hechos a mano en pequeñas tandas. Pide por WhatsApp." />
+<meta property="og:description" content="Panna cotta, flan, cake pops, mini tres leches y cookies hechos a mano en pequeñas tandas, y bandejas de mini postres para eventos. Pide por WhatsApp." />
 <meta property="og:url" content="https://pannacottas-antos.vercel.app/" />
 <meta property="og:image" content="https://pannacottas-antos.vercel.app/assets/marca/og.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -229,6 +229,33 @@
   .cta-bfly{width:30px;height:30px;color:var(--lavanda);margin-bottom:.6rem}
   .card-cta h3{font-size:1.75rem;font-weight:500;margin-bottom:.5rem}
   .card-cta p{color:var(--ciruela-soft);font-size:.97rem;margin-bottom:1.3rem}
+  .cta-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+
+  /* ================= EVENTOS Y CELEBRACIONES ================= */
+  .eventos{position:relative;overflow:hidden;margin-top:clamp(3rem,6vw,5rem);
+    padding:clamp(3.2rem,6.5vw,5.5rem) 0;
+    background:linear-gradient(162deg,var(--lavanda-wash) 0%,var(--rosa-wash) 58%,var(--porcelana-alt) 100%)}
+  .eventos .wrap{position:relative;z-index:2}
+  .ev-intro{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,5vw,4rem);align-items:center;
+    margin-bottom:clamp(2.4rem,5vw,3.4rem)}
+  .ev-intro h2{font-size:clamp(1.95rem,4vw,3rem);font-weight:500;margin:.7rem 0 .9rem}
+  .ev-intro h2 .script{font-size:1.22em;line-height:.9;display:inline-block}
+  .ev-copy p{color:var(--ciruela-soft);font-size:1.02rem;max-width:34rem}
+  .ev-occ{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:1.3rem 0 1.7rem;padding:0}
+  .ev-occ li{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ciruela-soft);
+    background:rgba(255,255,255,.74);border:1px solid rgba(62,46,79,.10);border-radius:999px;padding:.42rem .95rem}
+  .ev-photo{position:relative;display:block;width:100%;padding:0;cursor:zoom-in;overflow:hidden;
+    border:1px solid rgba(255,255,255,.8);border-radius:var(--r-l);background:var(--white);
+    box-shadow:var(--shadow-l);transition:transform .25s ease}
+  .ev-photo:hover{transform:translateY(-4px)}
+  .ev-photo img{width:100%;height:auto}
+  .ev-grid{grid-template-columns:repeat(3,1fr)}
+  .ev-shot{display:block;width:100%;padding:0;border:0;cursor:zoom-in;font:inherit}
+  .ev-shot img{object-position:center 58%}
+  .ev-shot.up img{object-position:center 44%}
+  .ev-note{display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap;text-align:center;
+    margin:clamp(2rem,4vw,2.8rem) auto 0;color:var(--ciruela-soft);font-size:.95rem}
+  .ev-note svg{width:16px;height:16px;color:var(--oro);flex:none}
 
   /* ================= MIÉRCOLES DE WOBBLE ================= */
   .wobble-band{position:relative;background:var(--ciruela);color:#fff;overflow:hidden;margin-top:clamp(3rem,6vw,5rem)}
@@ -260,6 +287,7 @@
     overflow:hidden;cursor:pointer;box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
   .menu-tile:hover{transform:translateY(-4px);box-shadow:var(--shadow-m);border-color:var(--lavanda-soft)}
   .menu-tile img{width:100%;height:auto}
+  .menu-tile:last-child:nth-child(3n+1){grid-column:2}
   .zoom{position:absolute;right:.7rem;bottom:.7rem;width:34px;height:34px;border-radius:50%;
     background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;color:var(--ciruela);box-shadow:var(--shadow-s)}
   .zoom svg{width:16px;height:16px}
@@ -351,6 +379,11 @@
     .about-photo{max-width:420px;margin-inline:auto}
     .wobble-inner{grid-template-columns:1fr}
     .foot-grid{grid-template-columns:1fr 1fr}
+    .nav-links{gap:1.05rem}
+    .nav-links a{font-size:.89rem}
+    .ev-intro{grid-template-columns:1fr;gap:2.4rem}
+    .ev-photo{max-width:460px;margin-inline:auto}
+    .ev-grid{grid-template-columns:repeat(2,1fr)}
   }
   @media (max-width:760px){
     body{font-size:16px}
@@ -364,6 +397,8 @@
     .booth-grid{grid-template-columns:1fr}
     .card-cta{grid-column:span 1}
     .menu-grid{grid-template-columns:1fr 1fr}
+    .menu-tile:last-child:nth-child(3n+1){grid-column:auto}
+    .ev-grid{grid-template-columns:1fr}
     .foot-grid{grid-template-columns:1fr;gap:1.8rem}
     .emblem-float{width:104px;right:-4px}
   }
@@ -421,6 +456,7 @@
       <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
       <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
       <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+      <a href="#eventos" data-es="Eventos" data-en="Events">Eventos</a>
       <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
       <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
       <a href="#booth" data-es="Booth" data-en="Booth">Booth</a>
@@ -521,7 +557,7 @@
         <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestros postres" data-en="Our desserts">Nuestros postres</span></span>
         <h2 data-es="El antojo bonito que se comparte." data-en="The pretty craving worth sharing.">El antojo bonito que se comparte.</h2>
       </div>
-      <span class="price-note"><svg><use href="#i-star"/></svg><span data-es="Desde $2.50 · Compra 5 y llévate 1 gratis" data-en="From $2.50 · Buy 5, get 1 free">Desde $2.50 · Compra 5 y llévate 1 gratis</span></span>
+      <span class="price-note"><svg><use href="#i-star"/></svg><span data-es="Desde $3 · Compra 5 y llévate 1 gratis" data-en="From $3 · Buy 5, get 1 free">Desde $3 · Compra 5 y llévate 1 gratis</span></span>
     </div>
     <div class="grid">
 
@@ -531,7 +567,7 @@
           <h3>Panna Cotta</h3>
           <p class="flavors" data-es="Cremosa, temblorosa y suave. Fresa, frutos rojos, durazno, Nutella o dulce de leche, en vasito individual." data-en="Creamy, wobbly and smooth. Strawberry, red berries, peach, Nutella or dulce de leche, in individual cups.">Cremosa, temblorosa y suave. Fresa, frutos rojos, durazno, Nutella o dulce de leche, en vasito individual.</p>
           <div class="card-foot">
-            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$4</span>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$5</span>
             <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero pedir Panna Cotta (dime los sabores disponibles)." data-msg-en="Hi Antonia! 🍓 I'd like to order Panna Cotta (which flavors are available?).">
               <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
@@ -555,9 +591,9 @@
         <div class="card-img"><img src="assets/productos/cake-pops.jpg" width="1100" height="870" loading="lazy" decoding="async" alt="Cake pops de colores decorados con sprinkles"><span class="card-tag" data-es="Para eventos" data-en="For events">Para eventos</span></div>
         <div class="card-body">
           <h3>Cake Pops</h3>
-          <p class="flavors" data-es="Bocaditos divertidos de vainilla o chocolate. Perfectos para compartir y celebrar." data-en="Fun little bites of vanilla or chocolate. Perfect to share and celebrate.">Bocaditos divertidos de vainilla o chocolate. Perfectos para compartir y celebrar.</p>
+          <p class="flavors" data-es="Bocaditos divertidos de vainilla o chocolate, perfectos para compartir. 6 por $16 · 12 por $30 · 24 por $56." data-en="Fun little bites of vanilla or chocolate, perfect to share. 6 for $16 · 12 for $30 · 24 for $56.">Bocaditos divertidos de vainilla o chocolate, perfectos para compartir. 6 por $16 · 12 por $30 · 24 por $56.</p>
           <div class="card-foot">
-            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$2.50</span>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
             <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍭 Quiero pedir Cake Pops (vainilla o chocolate)." data-msg-en="Hi Antonia! 🍭 I'd like to order Cake Pops (vanilla or chocolate).">
               <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
@@ -591,12 +627,12 @@
       </article>
 
       <article class="card reveal">
-        <div class="card-img"><img src="assets/productos/cookies.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Cookies Anto's: Red Velvet, Oreo Monster, M&amp;M's y más"><span class="card-tag" data-es="14 sabores" data-en="14 flavors">14 sabores</span></div>
+        <div class="card-img"><img src="assets/productos/cookies.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Cookies Anto's: Red Velvet, Oreo Monster, M&amp;M's y más"><span class="card-tag" data-es="13 sabores" data-en="13 flavors">13 sabores</span></div>
         <div class="card-body">
           <h3>Cookies</h3>
           <p class="flavors" data-es="Oreo Monster, Red Velvet, chips de chocolate, M&amp;M's, Kinder Bueno y más, según la temporada." data-en="Oreo Monster, Red Velvet, chocolate chips, M&amp;M's, Kinder Bueno and more, depending on the season.">Oreo Monster, Red Velvet, chips de chocolate, M&amp;M's, Kinder Bueno y más, según la temporada.</p>
           <div class="card-foot">
-            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$3</span>
+            <span class="from"><small data-es="Desde" data-en="From">Desde</small>$4</span>
             <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍪 Quiero pedir Cookies (dime los sabores de la temporada)." data-msg-en="Hi Antonia! 🍪 I'd like to order Cookies (which flavors are in season?).">
               <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
           </div>
@@ -621,12 +657,137 @@
           <svg class="cta-bfly"><use href="#i-bfly"/></svg>
           <h3 data-es="¿No sabes cuál elegir?" data-en="Not sure which to pick?">¿No sabes cuál elegir?</h3>
           <p data-es="Cuéntame para cuántas personas es y yo te armo la caja. También hacemos pedidos para cumpleaños, baby showers y eventos." data-en="Tell me how many people it's for and I'll put the box together. We also take orders for birthdays, baby showers and events.">Cuéntame para cuántas personas es y yo te armo la caja. También hacemos pedidos para cumpleaños, baby showers y eventos.</p>
-          <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero armar una caja de postres, ¿me ayudas a elegir?" data-msg-en="Hi Antonia! 🍓 I'd like to put together a dessert box, can you help me choose?">
-            <svg><use href="#i-wa"/></svg><span data-es="Armar mi pedido" data-en="Build my order">Armar mi pedido</span></a>
+          <div class="cta-actions">
+            <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🍓 Quiero armar una caja de postres, ¿me ayudas a elegir?" data-msg-en="Hi Antonia! 🍓 I'd like to put together a dessert box, can you help me choose?">
+              <svg><use href="#i-wa"/></svg><span data-es="Armar mi pedido" data-en="Build my order">Armar mi pedido</span></a>
+            <a class="btn btn-ghost" href="#eventos" data-es="Bandejas para eventos" data-en="Event trays">Bandejas para eventos</a>
+          </div>
         </div>
       </article>
 
     </div>
+  </div>
+</section>
+
+<!-- ============ EVENTOS Y CELEBRACIONES ============ -->
+<section class="eventos dots" id="eventos">
+  <div class="wrap">
+    <div class="ev-intro">
+      <div class="ev-copy reveal">
+        <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Para compartir" data-en="Made to share">Para compartir</span></span>
+        <h2 data-es="Eventos y <span class='script'>Celebraciones</span>" data-en="Events &amp; <span class='script'>Celebrations</span>">Eventos y <span class="script">Celebraciones</span></h2>
+        <p data-es="Celebra con postres artesanales preparados especialmente para compartir. Nuestras presentaciones individuales son perfectas para cumpleaños, baby showers, bodas, reuniones y cualquier ocasión especial." data-en="Celebrate with handcrafted desserts made especially to share. Our individual servings are perfect for birthdays, baby showers, weddings, get-togethers and any special occasion.">Celebra con postres artesanales preparados especialmente para compartir. Nuestras presentaciones individuales son perfectas para cumpleaños, baby showers, bodas, reuniones y cualquier ocasión especial.</p>
+        <p data-es="Elige tus favoritos en bandejas de 12 unidades y combina los sabores para crear una mesa dulce bonita, variada y hecha con mucho cariño." data-en="Pick your favorites in trays of 12 and mix the flavors to create a dessert table that is pretty, varied and made with lots of love.">Elige tus favoritos en bandejas de 12 unidades y combina los sabores para crear una mesa dulce bonita, variada y hecha con mucho cariño.</p>
+        <ul class="ev-occ">
+          <li data-es="Cumpleaños" data-en="Birthdays">Cumpleaños</li>
+          <li data-es="Baby showers" data-en="Baby showers">Baby showers</li>
+          <li data-es="Bodas" data-en="Weddings">Bodas</li>
+          <li data-es="Quinceañeras" data-en="Quinceañeras">Quinceañeras</li>
+          <li data-es="Reuniones" data-en="Get-togethers">Reuniones</li>
+        </ul>
+        <a class="btn btn-primary wa" href="#" target="_blank" rel="noopener"
+           data-msg-es="¡Hola Antonia! 🎉 Quiero armar una mesa dulce para mi evento. ¿Me ayudas con las bandejas?"
+           data-msg-en="Hi Antonia! 🎉 I'd like to put together a dessert table for my event. Can you help me with the trays?">
+          <svg><use href="#i-wa"/></svg><span data-es="Armar mi mesa dulce" data-en="Plan my dessert table">Armar mi mesa dulce</span></a>
+      </div>
+      <button type="button" class="ev-photo reveal" data-full="assets/eventos/mesa-eventos.jpg" data-cap-es="Mesa dulce de eventos con mini panna cottas, mini cakes, mini cremas, mini flanes, mini cake pops y mini cookies" data-cap-en="Event dessert table with mini panna cottas, mini cakes, mini creams, mini flans, mini cake pops and mini cookies" aria-label="Ver la mesa dulce de eventos en grande">
+        <img src="assets/eventos/mesa-eventos.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Mesa dulce montada para una celebración, con bandejas de mini postres, flores y velas"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+      </button>
+    </div>
+
+    <div class="grid ev-grid">
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot" data-full="assets/eventos/mini-panna-cottas.jpg" data-cap-es="Mini Panna Cottas para eventos · 3 oz · bandeja de 12 · $36" data-cap-en="Mini Panna Cottas for events · 3 oz · tray of 12 · $36" aria-label="Ver la bandeja de mini panna cottas en grande">
+          <img src="assets/eventos/mini-panna-cottas.jpg" width="1100" height="840" loading="lazy" decoding="async" alt="Bandeja de 12 mini panna cottas en vasitos altos con toppings de fresa, frutos rojos, durazno, dulce de leche y Nutella"><span class="zoom"><svg><use href="#i-zoom"/></svg></span><span class="card-tag" data-es="La firma" data-en="Signature">La firma</span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Panna Cottas" data-en="Mini Panna Cottas">Mini Panna Cottas</h3>
+          <p class="flavors" data-es="Vasitos de 3 oz en fresa, frutos rojos, durazno, dulce de leche y Nutella. Combina los sabores que quieras." data-en="3 oz cups in strawberry, mixed berries, peach, dulce de leche and Nutella. Mix the flavors however you like.">Vasitos de 3 oz en fresa, frutos rojos, durazno, dulce de leche y Nutella. Combina los sabores que quieras.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$36</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Panna Cottas para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Panna Cottas for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot" data-full="assets/eventos/mini-cakes.jpg" data-cap-es="Mini Cakes para eventos · 4.7 oz · bandeja de 12 · $36" data-cap-en="Mini Cakes for events · 4.7 oz · tray of 12 · $36" aria-label="Ver la bandeja de mini cakes en grande">
+          <img src="assets/eventos/mini-cakes.jpg" width="1100" height="852" loading="lazy" decoding="async" alt="Bandeja de 12 mini tres leches en vasitos con fresa, sprinkles, durazno y dulce de leche"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Cakes" data-en="Mini Cakes">Mini Cakes</h3>
+          <p class="flavors" data-es="Tres leches de 4.7 oz en Nutella, fresa, dulce de leche y durazno." data-en="4.7 oz tres leches in Nutella, strawberry, dulce de leche and peach.">Tres leches de 4.7 oz en Nutella, fresa, dulce de leche y durazno.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$36</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Cakes para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Cakes for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot up" data-full="assets/eventos/mini-cremas.jpg" data-cap-es="Mini Cremas para eventos · 3 oz · bandeja de 12 · $24" data-cap-en="Mini Creams for events · 3 oz · tray of 12 · $24" aria-label="Ver la bandeja de mini cremas en grande">
+          <img src="assets/eventos/mini-cremas.jpg" width="990" height="1100" loading="lazy" decoding="async" alt="Bandeja de 12 mini cremas en vasos con capas de fresa y durazno con crema chantilly"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Cremas" data-en="Mini Creams">Mini Cremas</h3>
+          <p class="flavors" data-es="Vasitos de 3 oz en capas: fresa con crema y durazno con crema." data-en="Layered 3 oz cups: strawberries with cream and peaches with cream.">Vasitos de 3 oz en capas: fresa con crema y durazno con crema.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$24</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Cremas para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Creams for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot" data-full="assets/eventos/mini-flanes.jpg" data-cap-es="Mini Flanes para eventos · bandeja de 12 · $24" data-cap-en="Mini Flans for events · tray of 12 · $24" aria-label="Ver la bandeja de mini flanes en grande">
+          <img src="assets/eventos/mini-flanes.jpg" width="1100" height="847" loading="lazy" decoding="async" alt="Bandeja de 12 mini flanes con caramelo y copete de crema chantilly"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Flanes" data-en="Mini Flans">Mini Flanes</h3>
+          <p class="flavors" data-es="Flanes caseros con caramelo, rematados con crema chantilly o dulce de leche." data-en="Homemade flans with caramel, topped with whipped cream or dulce de leche.">Flanes caseros con caramelo, rematados con crema chantilly o dulce de leche.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$24</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Flanes para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Flans for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot" data-full="assets/eventos/mini-cake-pops.jpg" data-cap-es="Mini Cake Pops para eventos · bandeja de 12 · $24" data-cap-en="Mini Cake Pops for events · tray of 12 · $24" aria-label="Ver la bandeja de mini cake pops en grande">
+          <img src="assets/eventos/mini-cake-pops.jpg" width="917" height="1100" loading="lazy" decoding="async" alt="Bandeja de 12 mini cake pops de colores envueltos individualmente sobre una base transparente"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Cake Pops" data-en="Mini Cake Pops">Mini Cake Pops</h3>
+          <p class="flavors" data-es="Bocaditos de unos 20 g en vainilla o chocolate. Colores a elegir para combinar con la temática de tu celebración." data-en="About 20 g each, in vanilla or chocolate. Pick the colors to match your celebration's theme.">Bocaditos de unos 20 g en vainilla o chocolate. Colores a elegir para combinar con la temática de tu celebración.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$24</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Cake Pops para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Cake Pops for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <button type="button" class="card-img ev-shot" data-full="assets/eventos/mini-cookies.jpg" data-cap-es="Mini Cookies para eventos · bandeja de 12 · $18" data-cap-en="Mini Cookies for events · tray of 12 · $18" aria-label="Ver la bandeja de mini cookies en grande">
+          <img src="assets/eventos/mini-cookies.jpg" width="918" height="1100" loading="lazy" decoding="async" alt="Bandeja de mini cookies artesanales decoradas y envueltas individualmente"><span class="zoom"><svg><use href="#i-zoom"/></svg></span>
+        </button>
+        <div class="card-body">
+          <h3 data-es="Mini Cookies" data-en="Mini Cookies">Mini Cookies</h3>
+          <p class="flavors" data-es="Cookies artesanales de 25 a 30 g, decoradas y envueltas una a una." data-en="Handcrafted cookies of 25 to 30 g, decorated and individually wrapped.">Cookies artesanales de 25 a 30 g, decoradas y envueltas una a una.</p>
+          <div class="card-foot">
+            <span class="from"><small data-es="Bandeja de 12" data-en="Tray of 12">Bandeja de 12</small>$18</span>
+            <a class="order-link wa" href="#" target="_blank" rel="noopener" data-msg-es="¡Hola Antonia! 🎉 Quiero una bandeja de 12 Mini Cookies para mi evento." data-msg-en="Hi Antonia! 🎉 I'd like a tray of 12 Mini Cookies for my event.">
+              <span data-es="Pedir" data-en="Order">Pedir</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="ev-note reveal"><svg><use href="#i-star"/></svg><span data-es="¿No sabes cuántas bandejas necesitas? Cuéntame cuántos invitados son y te ayudo a armar la mesa." data-en="Not sure how many trays you need? Tell me how many guests you are expecting and I will help you plan the table.">¿No sabes cuántas bandejas necesitas? Cuéntame cuántos invitados son y te ayudo a armar la mesa.</span></p>
   </div>
 </section>
 
@@ -670,12 +831,14 @@
     <div class="menu-grid reveal">
       <button type="button" class="menu-tile" data-full="assets/menu/menu-general.jpg" data-cap-es="Menú general · Panna Cottas Anto's" data-cap-en="Full menu · Panna Cottas Anto's" aria-label="Ver el menú general en grande">
         <img src="assets/menu/thumbs/menu-general.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Menú general de Panna Cottas Anto's"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
-      <button type="button" class="menu-tile" data-full="assets/menu/cookies.jpg" data-cap-es="Cookies Anto's · 14 sabores a $3" data-cap-en="Anto's Cookies · 14 flavors at $3" aria-label="Ver la carta de cookies en grande">
+      <button type="button" class="menu-tile" data-full="assets/menu/panna-cotta.jpg" data-cap-es="Panna Cotta · 5 sabores a $5" data-cap-en="Panna Cotta · 5 flavors at $5" aria-label="Ver la carta de panna cotta en grande">
+        <img src="assets/menu/thumbs/panna-cotta.jpg" width="408" height="620" loading="lazy" decoding="async" alt="Carta de sabores de panna cotta"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/cookies.jpg" data-cap-es="Cookies Anto's · 13 sabores a $4" data-cap-en="Anto's Cookies · 13 flavors at $4" aria-label="Ver la carta de cookies en grande">
         <img src="assets/menu/thumbs/cookies.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cookies"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/mini-cakes.jpg" data-cap-es="Mini Tres Leches · $5 c/u" data-cap-en="Mini Tres Leches · $5 each" aria-label="Ver la carta de mini cakes en grande">
         <img src="assets/menu/thumbs/mini-cakes.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de mini cakes de tres leches"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
-      <button type="button" class="menu-tile" data-full="assets/menu/cake-pops.jpg" data-cap-es="Cake Pops · $2.50 c/u · 6 por $12.50" data-cap-en="Cake Pops · $2.50 each · 6 for $12.50" aria-label="Ver la carta de cake pops en grande">
-        <img src="assets/menu/thumbs/cake-pops.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cake pops"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
+      <button type="button" class="menu-tile" data-full="assets/menu/cake-pops.jpg" data-cap-es="Cake Pops · $3 c/u · 6 por $16 · 12 por $30 · 24 por $56" data-cap-en="Cake Pops · $3 each · 6 for $16 · 12 for $30 · 24 for $56" aria-label="Ver la carta de cake pops en grande">
+        <img src="assets/menu/thumbs/cake-pops.jpg" width="414" height="620" loading="lazy" decoding="async" alt="Carta de cake pops"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/flan.jpg" data-cap-es="Flan · dulce de leche o crema · $3" data-cap-en="Flan · dulce de leche or whipped cream · $3" aria-label="Ver la carta de flan en grande">
         <img src="assets/menu/thumbs/flan.jpg" width="420" height="620" loading="lazy" decoding="async" alt="Carta de flan"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/fresas-durazno.jpg" data-cap-es="Fresas y durazno con crema · $3" data-cap-en="Strawberry &amp; peach with cream · $3" aria-label="Ver la carta de fresas y durazno en grande">
@@ -741,6 +904,7 @@
         <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
         <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
         <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+        <a href="#eventos" data-es="Eventos" data-en="Events">Eventos</a>
         <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
         <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
         <a href="#booth" data-es="Booth" data-en="Booth">Booth</a>

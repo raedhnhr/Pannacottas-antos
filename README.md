@@ -2,6 +2,9 @@
 
 > Rediseñado en septiembre 2026 según el concepto de rebranding de PYRAXIS.
 > El sitio anterior está respaldado en `../_backups/index-prerebranding-20260903.html`.
+>
+> **17/09/2026** — precios actualizados con las cartas nuevas y sección nueva de
+> *Eventos y Celebraciones*. Versión anterior en `../_backups/index-preprecios-20260917.html`.
 
 Sitio estático (HTML + CSS + JS, sin dependencias ni build). Se despliega tal cual en Vercel.
 
@@ -42,19 +45,25 @@ assets/
 │  └─ hero-pannacotta.jpg     Foto principal de la portada (hero)
 ├─ menu/                       Cartas del menú a tamaño completo (se abren al hacer clic)
 │  └─ thumbs/                  Miniaturas ligeras para la grilla
+├─ eventos/                    Bandejas de mini postres + foto de la mesa dulce
 └─ booth/                      Fotos del puesto + video (con su imagen de portada)
 ```
 
 ## Secciones
 
-`Inicio` · `La historia` · `Postres` · `El wobble` · `Menú` · `Booth`
+`Inicio` · `La historia` · `Postres` · `Eventos` · `El wobble` · `Menú` · `Booth`
 
 - **Postres** — 7 tarjetas con foto real, precio y botón de pedido por WhatsApp, más una
-  tarjeta final de "arma tu caja" para pedidos de eventos.
+  tarjeta final de "arma tu caja" que enlaza a la sección de Eventos.
+- **Eventos** — bandejas de 12 unidades para mesas dulces: 6 tarjetas (mini panna cottas,
+  mini cakes, mini cremas, mini flanes, mini cake pops y mini cookies) con precio por bandeja
+  y pedido por WhatsApp. Todas las fotos se amplían al hacer clic.
 - **El wobble** — "Miércoles de Wobble", el ritual de marca. Lleva el video del puesto en
   formato reel y enlaza a Instagram.
-- **Menú** — las 6 cartas de diseño, en rejilla de 3. Se hace clic en cualquiera y se abre a
+- **Menú** — las 7 cartas de diseño, en rejilla de 3. Se hace clic en cualquiera y se abre a
   pantalla completa, con flechas para pasar de una a otra (también funciona con ← → y Esc).
+  Si la última fila queda con una sola carta, se centra sola (regla
+  `.menu-tile:last-child:nth-child(3n+1)`); no hace falta tocar nada al añadir o quitar cartas.
 - **Booth** — 4 fotos del puesto, todas ampliables.
 
 ## Sistema de marca
@@ -95,5 +104,15 @@ se insertan con `<svg><use href="#i-bfly"/></svg>`.
   actualiza también el `src` (y el `data-full` en las cartas del menú y las fotos del booth).
 - **Fotos nuevas:** conviene bajarlas a ~1100 px de lado largo y calidad ~80 antes de subirlas,
   para que el sitio siga cargando rápido.
+- **Precios:** viven en tres sitios y hay que cambiarlos en los tres a la vez — la tarjeta de
+  la sección Postres (`<span class="from">`), el pie de foto de la carta del menú
+  (`data-cap-es` / `data-cap-en`) y la propia imagen de la carta en `assets/menu/`.
+- **Precios vigentes (17/09/2026):** panna cotta $5 · mini tres leches $5 · cookies $4 (13
+  sabores) · cake pops $3 c/u, 6 por $16, 12 por $30, 24 por $56 · flan $3 · fresas y durazno
+  con crema $3. Bandejas de 12 para eventos: mini panna cottas $36 · mini cakes $36 ·
+  mini cremas $24 · mini flanes $24 · mini cake pops $24 · mini cookies $18.
 - **Pendiente:** `assets/marca/og.jpg` (la imagen que se ve al compartir el link) sigue siendo
   la del diseño anterior. Hay que rehacerla con el lockup nuevo, 1200×630.
+- **Pendiente:** confirmar con Antonia si sigue vigente el "Compra 5 y llévate 1 gratis". Está
+  en la cabecera de Postres y en la de Menú, y en la carta de mini cakes; la carta del menú
+  general nueva ya no lo menciona.
