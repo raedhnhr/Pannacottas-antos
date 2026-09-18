@@ -205,6 +205,8 @@
   .price-note{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;
     color:var(--ciruela-soft);background:var(--white);border:1px solid rgba(62,46,79,.10);padding:.55rem 1.1rem;border-radius:999px;box-shadow:var(--shadow-s)}
   .price-note svg{width:15px;height:15px;color:var(--oro)}
+  .price-note{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+  .price-note:hover{transform:translateY(-2px);border-color:var(--lavanda-soft);box-shadow:var(--shadow-m)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
   .card{background:var(--white);border:1px solid rgba(62,46,79,.08);border-radius:var(--r-m);overflow:hidden;
     box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease;display:flex;flex-direction:column}
@@ -282,6 +284,8 @@
   .promo{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;
     color:var(--ciruela);background:var(--rosa-wash);border:1px solid rgba(227,174,200,.7);padding:.55rem 1.1rem;border-radius:999px}
   .promo svg{width:15px;height:15px;color:var(--oro)}
+  .promo{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+  .promo:hover{transform:translateY(-2px);border-color:var(--rosa);box-shadow:var(--shadow-s)}
   .menu-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;align-items:start}
   .menu-tile{position:relative;padding:0;border:1px solid var(--almendra);background:var(--white);border-radius:var(--r-m);
     overflow:hidden;cursor:pointer;box-shadow:var(--shadow-s);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
@@ -557,7 +561,10 @@
         <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuestros postres" data-en="Our desserts">Nuestros postres</span></span>
         <h2 data-es="El antojo bonito que se comparte." data-en="The pretty craving worth sharing.">El antojo bonito que se comparte.</h2>
       </div>
-      <span class="price-note"><svg><use href="#i-star"/></svg><span data-es="Desde $3 · Compra 5 y llévate 1 gratis" data-en="From $3 · Buy 5, get 1 free">Desde $3 · Compra 5 y llévate 1 gratis</span></span>
+      <a class="price-note wa" href="#" target="_blank" rel="noopener"
+         data-msg-es="¡Hola Antonia! 🍓 ¿Qué promociones tienen disponibles ahora mismo?"
+         data-msg-en="Hi Antonia! 🍓 What promotions do you have available right now?">
+        <svg><use href="#i-wa"/></svg><span data-es="Desde $3 · Promociones disponibles" data-en="From $3 · Deals available">Desde $3 · Promociones disponibles</span></a>
     </div>
     <div class="grid">
 
@@ -826,8 +833,15 @@
         <h2 data-es="Sabores y precios, en un vistazo" data-en="Flavors and prices, at a glance">Sabores y precios, en un vistazo</h2>
         <p data-es="Toca cualquier carta para verla en grande y leer todos los sabores." data-en="Tap any card to see it full size and read every flavor.">Toca cualquier carta para verla en grande y leer todos los sabores.</p>
       </div>
-      <span class="promo"><svg><use href="#i-star"/></svg><span data-es="Compra 5 y llévate 1 gratis" data-en="Buy 5, get 1 free">Compra 5 y llévate 1 gratis</span></span>
+      <a class="promo wa" href="#" target="_blank" rel="noopener"
+         data-msg-es="¡Hola Antonia! 🍓 ¿Qué promociones tienen disponibles ahora mismo?"
+         data-msg-en="Hi Antonia! 🍓 What promotions do you have available right now?">
+        <svg><use href="#i-wa"/></svg><span data-es="Promociones disponibles · escríbeme" data-en="Deals available · message me">Promociones disponibles · escríbeme</span></a>
     </div>
+    <!-- La carta suelta de Mini Cakes se retiró el 17/09/2026: llevaba impreso el
+         "BUY 5 GET 1 Free!" y la promo ya no se anuncia. Los sabores y el precio
+         siguen en la carta del menú general. Los archivos siguen en
+         assets/menu/mini-cakes.jpg y assets/menu/thumbs/ por si vuelve. -->
     <div class="menu-grid reveal">
       <button type="button" class="menu-tile" data-full="assets/menu/menu-general.jpg" data-cap-es="Menú general · Panna Cottas Anto's" data-cap-en="Full menu · Panna Cottas Anto's" aria-label="Ver el menú general en grande">
         <img src="assets/menu/thumbs/menu-general.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Menú general de Panna Cottas Anto's"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
@@ -835,8 +849,6 @@
         <img src="assets/menu/thumbs/panna-cotta.jpg" width="408" height="620" loading="lazy" decoding="async" alt="Carta de sabores de panna cotta"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/cookies.jpg" data-cap-es="Cookies Anto's · 13 sabores a $4" data-cap-en="Anto's Cookies · 13 flavors at $4" aria-label="Ver la carta de cookies en grande">
         <img src="assets/menu/thumbs/cookies.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de cookies"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
-      <button type="button" class="menu-tile" data-full="assets/menu/mini-cakes.jpg" data-cap-es="Mini Tres Leches · $5 c/u" data-cap-en="Mini Tres Leches · $5 each" aria-label="Ver la carta de mini cakes en grande">
-        <img src="assets/menu/thumbs/mini-cakes.jpg" width="413" height="620" loading="lazy" decoding="async" alt="Carta de mini cakes de tres leches"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/cake-pops.jpg" data-cap-es="Cake Pops · $3 c/u · 6 por $16 · 12 por $30 · 24 por $56" data-cap-en="Cake Pops · $3 each · 6 for $16 · 12 for $30 · 24 for $56" aria-label="Ver la carta de cake pops en grande">
         <img src="assets/menu/thumbs/cake-pops.jpg" width="414" height="620" loading="lazy" decoding="async" alt="Carta de cake pops"><span class="zoom"><svg><use href="#i-zoom"/></svg></span></button>
       <button type="button" class="menu-tile" data-full="assets/menu/flan.jpg" data-cap-es="Flan · dulce de leche o crema · $3" data-cap-en="Flan · dulce de leche or whipped cream · $3" aria-label="Ver la carta de flan en grande">

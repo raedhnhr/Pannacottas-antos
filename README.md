@@ -60,7 +60,7 @@ assets/
   y pedido por WhatsApp. Todas las fotos se amplían al hacer clic.
 - **El wobble** — "Miércoles de Wobble", el ritual de marca. Lleva el video del puesto en
   formato reel y enlaza a Instagram.
-- **Menú** — las 7 cartas de diseño, en rejilla de 3. Se hace clic en cualquiera y se abre a
+- **Menú** — las 6 cartas de diseño, en rejilla de 3. Se hace clic en cualquiera y se abre a
   pantalla completa, con flechas para pasar de una a otra (también funciona con ← → y Esc).
   Si la última fila queda con una sola carta, se centra sola (regla
   `.menu-tile:last-child:nth-child(3n+1)`); no hace falta tocar nada al añadir o quitar cartas.
@@ -113,6 +113,12 @@ se insertan con `<svg><use href="#i-bfly"/></svg>`.
   mini cremas $24 · mini flanes $24 · mini cake pops $24 · mini cookies $18.
 - **Pendiente:** `assets/marca/og.jpg` (la imagen que se ve al compartir el link) sigue siendo
   la del diseño anterior. Hay que rehacerla con el lockup nuevo, 1200×630.
-- **Pendiente:** confirmar con Antonia si sigue vigente el "Compra 5 y llévate 1 gratis". Está
-  en la cabecera de Postres y en la de Menú, y en la carta de mini cakes; la carta del menú
-  general nueva ya no lo menciona.
+- **Promociones:** el "Compra 5 y llévate 1 gratis" se retiró el 17/09/2026. En su lugar, las
+  píldoras de la cabecera de Postres y de Menú son enlaces a WhatsApp que dicen "Promociones
+  disponibles" y abren el chat preguntando cuáles hay vigentes. Así la promo se cambia sin
+  tocar la web. Si vuelve a haber una promo fija, va en esas dos píldoras.
+- **Carta de Mini Cakes retirada:** llevaba impreso el "BUY 5 GET 1 Free!", así que se sacó de
+  la rejilla del menú. Los cuatro sabores de tres leches y el precio de $5 siguen visibles en
+  la carta del menú general. Los archivos siguen versionados en `assets/menu/mini-cakes.jpg` y
+  `assets/menu/thumbs/mini-cakes.jpg`: para reponerla basta con volver a añadir su
+  `<button class="menu-tile">` (hay un comentario en el HTML, justo encima de `.menu-grid`).
