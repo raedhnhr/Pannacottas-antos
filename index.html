@@ -259,6 +259,18 @@
     margin:clamp(2rem,4vw,2.8rem) auto 0;color:var(--ciruela-soft);font-size:.95rem}
   .ev-note svg{width:16px;height:16px;color:var(--oro);flex:none}
 
+
+  /* ================= BOTÓN FLOTANTE CAKE SHED ================= */
+  .shed-float{position:fixed;left:50%;bottom:clamp(1rem,3vw,1.6rem);z-index:60;transform:translateX(-50%);
+    display:inline-flex;align-items:center;gap:.55rem;padding:.75rem 1.25rem;border-radius:999px;
+    background:linear-gradient(135deg,var(--violeta),var(--violeta-ink));color:#fff;font-family:"Jost";font-weight:500;
+    font-size:.95rem;text-decoration:none;white-space:nowrap;box-shadow:0 14px 30px -12px rgba(62,46,79,.6);
+    transition:opacity .3s ease,transform .3s ease}
+  .shed-float svg{width:18px;height:18px;flex:none}
+  .shed-float:hover{transform:translateX(-50%) translateY(-2px)}
+  .shed-float.gone{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(20px)}
+  @media (prefers-reduced-motion:no-preference){.shed-float:not(.gone){animation:shedPop 3.5s ease-in-out 1.5s infinite}}
+  @keyframes shedPop{0%,88%,100%{transform:translateX(-50%) rotate(0)}92%{transform:translateX(-50%) rotate(-3deg)}96%{transform:translateX(-50%) rotate(3deg)}}
   /* ================= MIÉRCOLES DE WOBBLE ================= */
   .wobble-band{position:relative;background:var(--ciruela);color:#fff;overflow:hidden;margin-top:clamp(3rem,6vw,5rem)}
   .wobble-band .dots-layer{position:absolute;inset:0;opacity:.16;
@@ -487,6 +499,8 @@
   </div>
 </header>
 <a id="top"></a>
+
+<a class="shed-float" id="shedFloat" href="#cakeshed"><svg><use href="#i-bfly"/></svg><span data-es="¡Conoce nuestro nuevo Cake Shed!" data-en="Visit our new Cake Shed!">¡Conoce nuestro nuevo Cake Shed!</span></a>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
@@ -1037,6 +1051,11 @@
   document.querySelectorAll(".lang button").forEach(function(b){
     b.addEventListener("click", function(){ setLang(b.getAttribute("data-lang")); });
   });
+
+  // ---- botón flotante Cake Shed: se oculta al llegar (o pasar) la sección ----
+  var shedFloat = document.getElementById("shedFloat"), shedSec = document.getElementById("cakeshed");
+  function shedCheck(){ shedFloat.classList.toggle("gone", shedSec.getBoundingClientRect().top < window.innerHeight * .8); }
+  window.addEventListener("scroll", shedCheck, {passive:true}); shedCheck();
 
   // ---- menú móvil ----
   var toggle = document.getElementById("menuToggle");
