@@ -460,6 +460,7 @@
       <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
       <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
       <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+      <a href="#cakeshed" data-es="Cake Shed" data-en="Cake Shed">Cake Shed</a>
       <a href="#eventos" data-es="Eventos" data-en="Events">Eventos</a>
       <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
       <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
@@ -677,6 +678,36 @@
 </section>
 
 <!-- ============ EVENTOS Y CELEBRACIONES ============ -->
+<!-- ================= CAKE SHED (reutiliza el estilo de .wobble-band) ================= -->
+<section class="wobble-band" id="cakeshed">
+  <div class="dots-layer"></div>
+  <div class="wrap wobble-inner">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="bfly"><use href="#i-bfly"/></svg><span data-es="Nuevo · Katy, TX" data-en="New · Katy, TX">Nuevo · Katy, TX</span></span>
+      <h2 data-es="Nuestro <span class='script'>Cake Shed</span>" data-en="Our <span class='script'>Cake Shed</span>">Nuestro <span class="script">Cake Shed</span></h2>
+      <p data-es="Una casita de postres de autoservicio. Abres la puerta, eliges lo que se te antoja —panna cottas, mini tres leches, cremas, flanes o cookies— y pagas ahí mismo. Todo hecho por Antonia en pequeñas tandas: cuando se acaban, se acaban." data-en="A self-serve dessert shed. Open the door, pick what you're craving —panna cottas, mini tres leches, cremas, flan or cookies— and pay right there. Everything made by Antonia in small batches: when they're gone, they're gone.">Una casita de postres de autoservicio. Abres la puerta, eliges lo que se te antoja —panna cottas, mini tres leches, cremas, flanes o cookies— y pagas ahí mismo. Todo hecho por Antonia en pequeñas tandas: cuando se acaban, se acaban.</p>
+      <div class="pillars">
+        <div class="pillar"><strong data-es="1 · Elige" data-en="1 · Pick">1 · Elige</strong><span data-es="Abre la casita y toma tus postres favoritos." data-en="Open the shed and grab your favorite desserts.">Abre la casita y toma tus postres favoritos.</span></div>
+        <div class="pillar"><strong data-es="2 · Paga" data-en="2 · Pay">2 · Paga</strong><span data-es="Con tarjeta, Zelle, Venmo o efectivo." data-en="By card, Zelle, Venmo or cash.">Con tarjeta, Zelle, Venmo o efectivo.</span></div>
+        <div class="pillar"><strong data-es="3 · Disfruta" data-en="3 · Enjoy">3 · Disfruta</strong><span data-es="Llévate tu bolsita y comparte el antojo." data-en="Take your little bag and share the treat.">Llévate tu bolsita y comparte el antojo.</span></div>
+      </div>
+      <p style="margin-top:1.6rem"><strong data-es="Jueves a domingo · 9 AM – 9 PM" data-en="Thursday to Sunday · 9 AM – 9 PM">Jueves a domingo · 9 AM – 9 PM</strong><br>
+        <span data-es="2122 Enchanted Park Ln, Katy, TX 77450 · junto al H-E-B de Mason Rd" data-en="2122 Enchanted Park Ln, Katy, TX 77450 · next to the H-E-B on Mason Rd">2122 Enchanted Park Ln, Katy, TX 77450 · junto al H-E-B de Mason Rd</span></p>
+      <div class="wobble-actions">
+        <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=2122+Enchanted+Park+Ln,+Katy,+TX+77450" target="_blank" rel="noopener">
+          <svg><use href="#i-pin"/></svg><span data-es="Cómo llegar" data-en="Get directions">Cómo llegar</span></a>
+      </div>
+    </div>
+    <div class="wobble-media reveal">
+      <!-- el script cambia src/poster al cambiar de idioma (data-src-es / data-src-en) -->
+      <video controls playsinline preload="metadata" src="assets/cakeshed/cakeshed-es.mp4" poster="assets/cakeshed/poster-es.jpg"
+        data-src-es="assets/cakeshed/cakeshed-es.mp4" data-src-en="assets/cakeshed/cakeshed-en.mp4"
+        data-poster-es="assets/cakeshed/poster-es.jpg" data-poster-en="assets/cakeshed/poster-en.jpg"
+        aria-label="Video del Cake Shed de Panna Cottas Anto's"></video>
+    </div>
+  </div>
+</section>
+
 <section class="eventos dots" id="eventos">
   <div class="wrap">
     <div class="ev-intro">
@@ -916,6 +947,7 @@
         <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
         <a href="#sobre" data-es="La historia" data-en="The story">La historia</a>
         <a href="#postres" data-es="Postres" data-en="Desserts">Postres</a>
+        <a href="#cakeshed" data-es="Cake Shed" data-en="Cake Shed">Cake Shed</a>
         <a href="#eventos" data-es="Eventos" data-en="Events">Eventos</a>
         <a href="#wobble" data-es="El wobble" data-en="The wobble">El wobble</a>
         <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
@@ -995,6 +1027,10 @@
     document.title = lang === "en"
       ? "Panna Cottas Anto's · Handcrafted desserts in Katy, TX"
       : "Panna Cottas Anto's · Postres artesanales en Katy, TX";
+    document.querySelectorAll("video[data-src-es]").forEach(function(v){
+      var src = v.getAttribute("data-src-" + lang);
+      if (v.getAttribute("src") !== src) { v.poster = v.getAttribute("data-poster-" + lang); v.src = src; }
+    });
     refreshWhatsApp();
     if (lb.classList.contains("open")) { lbRender(); }
   }

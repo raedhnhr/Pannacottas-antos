@@ -51,10 +51,13 @@ assets/
 
 ## Secciones
 
-`Inicio` · `La historia` · `Postres` · `Eventos` · `El wobble` · `Menú` · `Booth`
+`Inicio` · `La historia` · `Postres` · `Cake Shed` · `Eventos` · `El wobble` · `Menú` · `Booth`
 
 - **Postres** — 7 tarjetas con foto real, precio y botón de pedido por WhatsApp, más una
   tarjeta final de "arma tu caja" que enlaza a la sección de Eventos.
+- **Cake Shed** — la casita de autoservicio (14/11/2026): qué es, 3 pasos, horario, dirección y
+  botón a Google Maps. El video cambia con el idioma: `assets/cakeshed/cakeshed-es.mp4` /
+  `cakeshed-en.mp4` (atributos `data-src-es/en` y `data-poster-es/en` del `<video>`).
 - **Eventos** — bandejas de 12 unidades para mesas dulces: 6 tarjetas (mini panna cottas,
   mini cakes, mini cremas, mini flanes, mini cake pops y mini cookies) con precio por bandeja
   y pedido por WhatsApp. Todas las fotos se amplían al hacer clic.
